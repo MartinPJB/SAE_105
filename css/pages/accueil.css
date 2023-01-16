@@ -1,0 +1,32 @@
+/* Iframe */
+iframe {
+    border-radius: 10px;
+    width: 16rem;
+    height: 10rem;
+    animation: fadeIn 1.2s ease;
+}
+
+/* Tables */
+tr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+td {
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+th {
+    width: 100%;
+    font-family: 'Prompt', sans-serif;
+    background-color: rgb(var(--main-color));
+    font-size: 2rem;
+    padding: 5px 0;
+    color: #fff;
+    border-radius: 50px;
+    filter: drop-shadow(0px 0px 20px rgba(var(--dark), .2));
+}

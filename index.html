@@ -14,19 +14,19 @@
 <body>
     <div class="wrapper">
         <!-- Header -->
-        <header role="banner" class="parallax">
+        <header role="banner" class="parallax column">
             <img src="img/logo.png" alt="logo-color-bass">
             <h1>ACCUEIL DU SITE</h1>
         </header>
 
         <!-- Navbar -->
         <nav role="navigation" aria-label="Menu principal">
-            <ul>
+            <ul class="row">
                 <li>
                     <a href="/">Accueil</a>
                 </li>
                 <li>
-                    <a href="/tutoriels.html">Tutoriels</a>
+                    <a href="/ressources.html">Ressources</a>
                 </li>
                 <li>
                     <a href="/logiciels.html">Logiciels</a>
@@ -44,7 +44,7 @@
         </nav>
 
         <!-- Contenu Principal -->
-        <main role="main">
+        <main role="main" class="column">
 
             <section class="infosColorBass">
                 <h1>La "Color Bass"? C'est quoi?</h1>
@@ -70,42 +70,49 @@
             <!-- Vidéos clips -->
             <section class="videosClips">
                 <h1>Comment ça sonne?</h1>
-                <table>
-                    <thead>
-                        <tr>
-                            <th colspan="3">3 Exemples de morceaux Color Bass</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <iframe src="https://www.youtube-nocookie.com/embed/SM0B-s2ggzQ"
-                                    title="Musique de l'artiste Sharks: 'Haxo'"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe>
-                            </td>
-                            <td>
-                                <iframe src="https://www.youtube-nocookie.com/embed/RXerRpYcwuw"
-                                    title="Musique de l'artiste Ace Aura: 'UMBRA'"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe>
-                            </td>
-                            <td>
-                                <iframe src="https://www.youtube-nocookie.com/embed/XUlJN59Ivnc"
-                                    title="Musique de l'artiste Skybreak: 'Soul Shards'"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <article class="row gap">
+                    <!-- Sharks -->
+                    <iframe src="https://www.youtube-nocookie.com/embed/SM0B-s2ggzQ"
+                        title="Musique de l'artiste Sharks: 'Haxo'"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                    <!-- Ace Aura -->
+                    <iframe src="https://www.youtube-nocookie.com/embed/RXerRpYcwuw"
+                        title="Musique de l'artiste Ace Aura: 'UMBRA'"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                    <!-- Skybreak -->
+                    <iframe src="https://www.youtube-nocookie.com/embed/XUlJN59Ivnc"
+                        title="Musique de l'artiste Skybreak: 'Soul Shards'"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </article>
             </section>
         </main>
 
         <!-- Footer -->
-        <footer role="contentinfo" class="parallax">
+        <footer role="contentinfo" class="parallax column">
             <p>Sité réalisé par Martin Brönnimann</p>
             <p>Dans le cadre de la SAE 105</p>
+            <ul class="row gap">
+                <li>
+                    <a href="./a_propos.html">CGU</a>
+                </li>
+                <li>
+                    <a href="./ressources.html">Ressources</a>
+                </li>
+                <li>
+                    <a href="./logiciels.html">Logiciels</a>
+                </li>
+                <li>
+                    <a href="./artistes.html">Artistes</a>
+                </li>
+                <li>
+                    <a href="./contact.html">Contact</a>
+                </li>
+            </ul>
         </footer>
     </div>
 

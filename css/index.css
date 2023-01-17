@@ -266,6 +266,7 @@ header h1 {
 
 /* Sections */
 section {
+    width: 100%;
     background-color: var(--light);
     display: flex;
     position: relative;

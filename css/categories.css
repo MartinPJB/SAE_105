@@ -1,0 +1,88 @@
+/* Articles */
+article {
+    border: .5px solid rgba(128, 128, 128, .3);
+    border-radius: 10px;
+    margin: 0;
+    margin-bottom: 1rem;
+    padding: 1rem 2rem !important;
+    width: calc(100% - 4rem);
+    /* Retire 4rem car sinon ne respecte pas le padding */
+}
+
+article figure img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+article figure figcaption {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(var(--dark));
+    color: var(--light);
+    padding: 1rem 2rem;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    margin-top: -5px;
+}
+
+article ul li:nth-child(even) a {
+    color: rgb(var(--main-color-darker));
+    font-weight: bold;
+}
+
+article ol li {
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 1rem;
+}
+
+/* Tables */
+table {
+    margin-top: 1rem;
+    border-collapse: collapse;
+    font-family: 'Lato', sans-serif;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table td,
+table th {
+    padding: 15px;
+}
+
+table thead th {
+    background-color: rgb(var(--main-color));
+    color: #ffffff;
+    font-weight: bold;
+    font-family: 'Prompt', sans-serif;
+    font-size: 1rem;
+}
+
+table thead th:first-child {
+    border-top-left-radius: 10px;
+}
+
+table thead th:last-child {
+    border-top-right-radius: 10px;
+}
+
+table tbody td {
+    color: rgb(var(--dark));
+    border: 1px solid rgba(var(--dark), .2);
+}
+
+table tbody tr {
+    background-color: rgba(var(--dark), .05);
+}
+
+table tbody, table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+table tbody, table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: var(--light);
+}

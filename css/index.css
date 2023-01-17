@@ -296,6 +296,16 @@ section article {
     padding: 0 50px;
 }
 
+/* Iframe */
+iframe {
+    border-radius: 10px;
+    width: 16rem;
+    height: 10rem;
+    -webkit-animation: fadeIn 1.2s ease;
+            animation: fadeIn 1.2s ease;
+    border: none;
+}
+
 /* Navbar */
 nav {
     position: flex;

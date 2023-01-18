@@ -194,6 +194,7 @@ input[type="submit"], button {
     padding: 1rem 2.5rem;
     border-radius: 10px;
     cursor: pointer;
+    width: fit-content;
     background: transparent;
     font-weight: bold;
     font-family: 'Prompt', sans-serif;

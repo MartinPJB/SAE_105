@@ -7,15 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Propos | Color bass</title>
 
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/categories.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/categories.css">
 </head>
 
 <body>
     <div class="wrapper">
         <!-- Header -->
         <header role="banner" class="parallax column">
-            <img src="img/logo.png" alt="logo-color-bass">
+            <img src="./img/logo.png" alt="logo-color-bass">
             <h1>CONTACT</h1>
         </header>
 
@@ -46,10 +46,7 @@
         <!-- Contenu Principal -->
         <main role="main">
             <section>
-                <hgroup>
-                    <h1>REMPLISSEZ CE FORMULAIRE</h1>
-                    <h2>POUR ME CONTACTER</h2>
-                </hgroup>
+                <h1>REMPLISSEZ CE FORMULAIRE</h1>
 
                 <form method="post">
                     <fieldset>
@@ -72,7 +69,7 @@
                         <legend>Informations:</legend>
 
                         <div>
-                            <label for="raison">Raison de votre contact:</label>
+                            <label>Raison de votre contact:</label>
                             <select name="raison">
                                 <option value="pb" selected>Un problème avec le site</option>
                                 <option value="qt">Une question relative au contenu du site</option>
@@ -81,12 +78,12 @@
                         </div>
 
                         <div>
-                            <label for="nom">Votre nom:</label>
+                            <label>Votre nom:</label>
                             <input type="text" name="nom" placeholder="Jean Dupont" required>
                         </div>
 
                         <div>
-                            <label for="mail">Votre adresse mail:</label>
+                            <label>Votre adresse mail:</label>
                             <input type="email" name="mail" placeholder="jdupont67@gmail.com" required>
                         </div>
                     </fieldset>
@@ -99,7 +96,7 @@
                     <fieldset>
                         <legend>Infos complémentaires:</legend>
                         <input type="checkbox" name="anonymous" checked>
-                        <label for="anonymous">Rester anonyme (<strong>Seulement votre nom sera affecté, non pas votre
+                        <label>Rester anonyme (<strong>Seulement votre nom sera affecté, non pas votre
                                 adresse mail</strong>)</label>
                     </fieldset>
 

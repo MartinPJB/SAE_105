@@ -360,7 +360,7 @@ nav ul li a::after {
     transition: width .5s ease;
 }
 
-nav ul li :hover::after {
+nav ul li:hover a::after, nav ul li.active a::after {
     width: 100%;
 }
 

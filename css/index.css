@@ -47,6 +47,10 @@ main.withAside {
     flex-direction: row;
 }
 
+main.withAside.reverseAside {
+    flex-direction: row-reverse;
+}
+
 main.withAside aside {
     flex: .5;
     background-color: rgb(var(--dark));
@@ -179,6 +183,58 @@ form fieldset textarea {
     height: 5rem;
 }
 
+/* Tables */
+table {
+    margin-top: 1rem;
+    border-collapse: collapse;
+    font-family: 'Lato', sans-serif;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+table td,
+table th {
+    padding: 15px;
+}
+
+table thead th {
+    background-color: rgb(var(--main-color));
+    color: #ffffff;
+    font-weight: bold;
+    font-family: 'Prompt', sans-serif;
+    font-size: 1rem;
+}
+
+table thead th:first-child {
+    border-top-left-radius: 10px;
+}
+
+table thead th:last-child {
+    border-top-right-radius: 10px;
+}
+
+table tbody td {
+    color: rgb(var(--dark));
+    border: 1px solid rgba(var(--dark), .2);
+}
+
+table tbody tr {
+    background-color: rgba(var(--dark), .05);
+}
+
+table tbody, table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+table tbody, table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: var(--light);
+}
+
 /* Inputs */
 input[type="text"], input[type="email"], select, textarea {
     border: .5px solid rgba(128, 128, 128, .3);
@@ -194,6 +250,8 @@ input[type="submit"], button {
     padding: 1rem 2.5rem;
     border-radius: 10px;
     cursor: pointer;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     background: transparent;
     font-weight: bold;
@@ -238,6 +296,21 @@ q {
     font-style: italic;
     margin: 1rem 0;
     opacity: .8;
+}
+
+/* Changement de dl dt dd */
+dl {
+    margin-bottom: 1rem;
+}
+
+dl dt {
+    font-family: 'Prompt', sans-serif;
+    font-weight: bold;
+}
+
+dl dd {
+    font-family: 'Lato', sans-serif;
+    margin-bottom: .5rem;
 }
 
 /* Header */
@@ -307,6 +380,29 @@ iframe {
     border: none;
 }
 
+/* Details */
+details {
+    border: .5px solid rgba(128, 128, 128, .5);
+    border-radius: 10px;
+    padding: 0.5em 0.5em 0;
+}
+
+summary {
+    font-family: 'Prompt', sans-serif;
+    font-weight: bold;
+    margin: -0.5em -0.5em 0;
+    padding: 0.5em 1rem;
+}
+
+details[open] {
+    padding: 0.5em;
+}
+
+details[open] summary {
+    border-bottom: .5px solid rgba(128, 128, 128, .5);
+    margin-bottom: 0.5em;
+}
+
 /* Navbar */
 nav {
     position: flex;
@@ -325,6 +421,7 @@ nav ul {
 }
 
 nav ul li {
+    position: relative;
     margin: 0 .35rem;
     width: 8rem;
     padding-top: 2.5rem;
@@ -347,6 +444,7 @@ nav ul li a {
     height: 100%;
     font-family: 'Lato', sans-serif;
     color: var(--light);
+    white-space:nowrap;
     text-decoration: none;
 }
 

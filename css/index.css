@@ -30,6 +30,7 @@ body {
     height: 100vh;
 }
 
+/* Contient l'entiereté du contenu */
 .wrapper {
     width: 960px;
     height: 100vh;
@@ -64,10 +65,12 @@ main {
 
 /* Classe pour row/column avec gap */
 .row {
+    display: flex;
     flex-direction: row;
 }
 
 .column {
+    display: flex;
     flex-direction: column;
 }
 
@@ -109,8 +112,6 @@ form fieldset legend {
 }
 
 form fieldset div {
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
@@ -263,14 +264,14 @@ iframe {
 }
 
 /* Navbar */
-nav {
+nav.mainNavbar {
     position: flex;
     top: 0;
     background-color: rgba(var(--main-color), .5);
     z-index: 11;
 }
 
-nav ul {
+nav.mainNavbar ul {
     margin: 0;
     display: flex;
     justify-content: center;
@@ -279,7 +280,7 @@ nav ul {
     box-shadow: 0px 0px 35px 3px rgba(0, 0, 0, 0.8);
 }
 
-nav ul li {
+nav.mainNavbar ul li {
     position: relative;
     margin: 0 .35rem;
     width: 8rem;
@@ -289,15 +290,15 @@ nav ul li {
     transition: opacity .5s ease;
 }
 
-nav ul:hover li {
+nav.mainNavbar ul:hover li {
     opacity: .6;
 }
 
-nav ul li:hover {
+nav.mainNavbar ul li:hover {
     opacity: 1;
 }
 
-nav ul li a {
+nav.mainNavbar ul li a {
     display: block;
     width: 100%;
     height: 100%;
@@ -307,7 +308,7 @@ nav ul li a {
     text-decoration: none;
 }
 
-nav ul li a::after {
+nav.mainNavbar ul li a::after {
     content: "";
     width: 0;
     height: 3px;
@@ -318,7 +319,7 @@ nav ul li a::after {
     transition: width .5s ease;
 }
 
-nav ul li:hover a::after, nav ul li.active a::after {
+nav.mainNavbar ul li:hover a::after, nav ul li.active a::after {
     width: 100%;
 }
 
@@ -346,6 +347,15 @@ footer ul {
 footer ul li a {
     text-decoration: underline;
     color: var(--light);
+}
+
+/* Langues boutons */
+footer .langues {
+    gap: 25px;
+}
+footer .langues img {
+    margin-top: 2rem;
+    width: 2.5rem;
 }
 
 /* Animations */

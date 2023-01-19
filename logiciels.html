@@ -15,7 +15,8 @@
                 <img src="./img/logo.png" alt="logo-color-bass">
                 <h1>LOGICIELS</h1>
             </header>
-            <nav role="navigation" aria-label="Menu principal">
+            <!-- Navbar (Avec la classe mainNavbar pour la différencier des nav présentes dans les aside) -->
+            <nav class="mainNavbar" role="navigation" aria-label="Menu principal">
                 <ul>
                     <li>
                         <a href="/">Accueil</a>
@@ -23,10 +24,10 @@
                     <li>
                         <a href="/ressources.html">Ressources</a>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="/logiciels.html">Logiciels</a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="/artistes.html">Artistes</a>
                     </li>
                     <li>
@@ -38,27 +39,32 @@
                 </ul>
             </nav>
             <main role="main" class="withAside">
+                <!-- Aside contenant tous les articles avec une ancre pour scroll -->
                 <aside>
-                    <ul>
-                        <li>
-                            <a href="#flStudio">Fl Studio</a>
-                        </li>
-                        <li>
-                            <a href="#ableton">Ableton Live</a>
-                        </li>
-                        <li>
-                            <a href="#bitwig">Bitwig Studio</a>
-                        </li>
-                        <li>
-                            <a href="#logicPro">Logic Pro</a>
-                        </li>
-                        <li>
-                            <a href="#comp">Comparaison</a>
-                        </li>
-                    </ul>
+                    <nav aria-label="Menu des articles">
+                        <ul>
+                            <li>
+                                <a href="#flStudio">Fl Studio</a>
+                            </li>
+                            <li>
+                                <a href="#ableton">Ableton Live</a>
+                            </li>
+                            <li>
+                                <a href="#bitwig">Bitwig Studio</a>
+                            </li>
+                            <li>
+                                <a href="#logicPro">Logic Pro</a>
+                            </li>
+                            <li>
+                                <a href="#comp">Comparaison</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </aside>
+                <!-- Section contenant les articles -->
                 <section>
                     <h1>Les logiciels pour faire de la Color Bass</h1>
+                    <!-- FL Studio -->
                     <article id="flStudio">
                         <h2>FL Studio</h2>
                         <q cite="https://image-line.com/">The fastest way from your brain to your speakers</q>
@@ -92,6 +98,7 @@
                         </dl>
                         <button data-clickRedirectHref="https://www.image-line.com/">Visiter leur site</button>
                     </article>
+                    <!-- Ableton -->
                     <article id="ableton">
                         <h2>Ableton Live</h2>
                         <q cite="https://www.ableton.com/en/live/">Add more feeling to your music</q>
@@ -119,6 +126,7 @@
                         </dl>
                         <button data-clickRedirectHref="https://www.ableton.com/en/live/">Visiter leur site</button>
                     </article>
+                    <!-- Bitwig Studio -->
                     <article id="bitwig">
                         <h2>Bitwig Studio</h2>
                         <q cite="https://www.bitwig.com/"> Modern music production and performance for Windows, macOS, and Linux.</q>
@@ -152,6 +160,7 @@
                         </dl>
                         <button data-clickRedirectHref="https://bitwig.com/">Visiter leur site</button>
                     </article>
+                    <!-- Logic Pro -->
                     <article id="logicPro">
                         <h2>Logic Pro</h2>
                         <q cite="https://www.apple.com/fr/logic-pro/">Terriblement puissant. Merveilleusement créatif.</q>
@@ -185,6 +194,7 @@
                         </dl>
                         <button data-clickRedirectHref="https://www.apple.com/fr/logic-pro/">Visiter leur site</button>
                     </article>
+                    <!-- Pro Tools -->
                     <article id="proTools">
                         <h2>Pro Tools</h2>
                         <q cite="https://www.avid.com/pro-tools">Legendary music starts here.</q>
@@ -206,26 +216,37 @@
                     </article>
                 </section>
             </main>
+            <!-- Footer -->
             <footer role="contentinfo" class="parallax column">
                 <p>Sité réalisé par Martin Brönnimann</p>
                 <p>Dans le cadre de la SAE 105</p>
-                <ul class="row gap">
-                    <li>
-                        <a href="./a_propos.html">CGU</a>
-                    </li>
-                    <li>
-                        <a href="./ressources.html">Ressources</a>
-                    </li>
-                    <li>
-                        <a href="./logiciels.html">Logiciels</a>
-                    </li>
-                    <li>
-                        <a href="./artistes.html">Artistes</a>
-                    </li>
-                    <li>
-                        <a href="./contact.html">Contact</a>
-                    </li>
-                </ul>
+                <nav aria-label="Navigation du footer">
+                    <ul class="row gap">
+                        <li>
+                            <a href="./a_propos.html">CGU</a>
+                        </li>
+                        <li>
+                            <a href="./ressources.html">Ressources</a>
+                        </li>
+                        <li>
+                            <a href="./logiciels.html">Logiciels</a>
+                        </li>
+                        <li>
+                            <a href="./artistes.html">Artistes</a>
+                        </li>
+                        <li>
+                            <a href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="row langues">
+                    <a href="#FR">
+                        <img src="./img/flags/france.png" alt="Site en Français">
+                    </a>
+                    <a href="#UNKNOWN">
+                        <img src="./img/flags/unknown.png" alt="Site en ***">
+                    </a>
+                </div>
             </footer>
         </div>
     </body>

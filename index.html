@@ -13,9 +13,10 @@
                 <img src="./img/logo.png" alt="logo-color-bass">
                 <h1>ACCUEIL DU SITE</h1>
             </header>
-            <nav role="navigation" aria-label="Menu principal">
-                <ul class="row">
-                    <li class="active">
+            <!-- Navbar (Avec la classe mainNavbar pour la différencier des nav présentes dans les aside) -->
+            <nav class="mainNavbar" role="navigation" aria-label="Menu principal">
+                <ul>
+                    <li>
                         <a href="/">Accueil</a>
                     </li>
                     <li>
@@ -24,7 +25,7 @@
                     <li>
                         <a href="/logiciels.html">Logiciels</a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="/artistes.html">Artistes</a>
                     </li>
                     <li>
@@ -36,34 +37,51 @@
                 </ul>
             </nav>
             <main role="main" class="column">
+                <!-- Informations sur la Color Bass -->
                 <section class="infosColorBass">
                     <h1>La "Color Bass"? C'est quoi?</h1>
-                    <p> La
-                        <b>Color Bass</b> est une catégorisation de
+                    <p>
+                        La
+                        <b>Color Bass</b>
+                        est une catégorisation de
                         <b>
                             <a href="https://fr.wikipedia.org/wiki/Bass_music" target="_blank">Bass Music</a>
-                        </b> se concentrant sur la mélodie, l'émotion et la vibration parallèlement au dynamisme et à l'agressivité des basses souvent associés au
+                        </b>
+                        se concentrant sur la mélodie, l'émotion et la vibration parallèlement au dynamisme et à l'agressivité des basses souvent associés au
                         <b>
                             <a href="https://fr.wikipedia.org/wiki/Dubstep#:~:text=Le%20dubstep%20est%20un%20genre,%2C%20jungle%2C%20dub%20et%20reggae." target="_blank">Dubstep</a>
-                        </b> .
+                        </b>
+                        .
                     </p>
-                    <p> Le terme de
-                        <b>Color Bass</b> a été inventé par le producteur
+                    <p>
+                        Le terme de
+                        <b>Color Bass</b>
+                        a été inventé par le producteur
                         <b>
                             <a href="https://www.chimetunes.net/" target="_blank">Chime</a>
                         </b>
-                        <i> (A.K.A Harvey Oscar Thompson)</i> , un artiste originaire d'
-                        <b>Angleterre</b> ayant commencé la composition de musique éléctronique en
-                        <b>2010</b> avec la création d'un duo avec l'artiste
-                        <b>James Shakeshaft</b> appelé
-                        <i>"Caution & Crisis"</i> .
+                        <i> (A.K.A Harvey Oscar Thompson)</i>
+                        , un artiste originaire d'
+                        <b>Angleterre</b>
+                        ayant commencé la composition de musique éléctronique en
+                        <b>2010</b>
+                        avec la création d'un duo avec l'artiste
+                        <b>James Shakeshaft</b>
+                        appelé
+                        <i>"Caution & Crisis"</i>
+                        .
                     </p>
-                    <p> Attention, une confusion que beaucoup de gens font dans ce milieu, la Color Bass
-                        <strong>n'est pas du Dubstep</strong> . La Color Bass
-                        <strong>n'en est qu'un sous-genre</strong> ! C'est à dire que ce genre de musique a été issu du Dubstep, mais
-                        <strong>issu ne signifie pas le même</strong> . Il ne faut pas voir les deux comme la même chose car de nombreuses choses divergent entre les deux styles.
+                    <p>
+                        Attention, une confusion que beaucoup de gens font dans ce milieu, la Color Bass
+                        <strong>n'est pas du Dubstep</strong>
+                        . La Color Bass
+                        <strong>n'en est qu'un sous-genre</strong>
+                        ! C'est à dire que ce genre de musique a été issu du Dubstep, mais
+                        <strong>issu ne signifie pas le même</strong>
+                        . Il ne faut pas voir les deux comme la même chose car de nombreuses choses divergent entre les deux styles.
                     </p>
                 </section>
+                <!-- Vidéo clips de musiques -->
                 <section class="videosClips">
                     <h1>Comment ça sonne?</h1>
                     <article class="row gap">
@@ -88,26 +106,37 @@
                     </article>
                 </section>
             </main>
+            <!-- Footer -->
             <footer role="contentinfo" class="parallax column">
                 <p>Sité réalisé par Martin Brönnimann</p>
                 <p>Dans le cadre de la SAE 105</p>
-                <ul class="row gap">
-                    <li>
-                        <a href="./a_propos.html">CGU</a>
-                    </li>
-                    <li>
-                        <a href="./ressources.html">Ressources</a>
-                    </li>
-                    <li>
-                        <a href="./logiciels.html">Logiciels</a>
-                    </li>
-                    <li>
-                        <a href="./artistes.html">Artistes</a>
-                    </li>
-                    <li>
-                        <a href="./contact.html">Contact</a>
-                    </li>
-                </ul>
+                <nav aria-label="Navigation du footer">
+                    <ul class="row gap">
+                        <li>
+                            <a href="./a_propos.html">CGU</a>
+                        </li>
+                        <li>
+                            <a href="./ressources.html">Ressources</a>
+                        </li>
+                        <li>
+                            <a href="./logiciels.html">Logiciels</a>
+                        </li>
+                        <li>
+                            <a href="./artistes.html">Artistes</a>
+                        </li>
+                        <li>
+                            <a href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="row langues">
+                    <a href="#FR">
+                        <img src="./img/flags/france.png" alt="Site en Français">
+                    </a>
+                    <a href="#UNKNOWN">
+                        <img src="./img/flags/unknown.png" alt="Site en ***">
+                    </a>
+                </div>
             </footer>
         </div>
     </body>

@@ -24,10 +24,12 @@ main.withAside section {
 }
 
 /* Aside */
-aside ul {
+aside nav {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+}
+aside ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -150,7 +152,8 @@ details[open] summary {
 /* Articles */
 article figure {
     margin-left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
     width: 100%;
 }
 

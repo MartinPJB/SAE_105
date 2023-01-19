@@ -14,18 +14,19 @@
                 <img src="./img/logo.png" alt="logo-color-bass">
                 <h1>Ressources</h1>
             </header>
-            <nav role="navigation" aria-label="Menu principal">
+            <!-- Navbar (Avec la classe mainNavbar pour la différencier des nav présentes dans les aside) -->
+            <nav class="mainNavbar" role="navigation" aria-label="Menu principal">
                 <ul>
                     <li>
                         <a href="/">Accueil</a>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="/ressources.html">Ressources</a>
                     </li>
                     <li>
                         <a href="/logiciels.html">Logiciels</a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="/artistes.html">Artistes</a>
                     </li>
                     <li>
@@ -37,77 +38,92 @@
                 </ul>
             </nav>
             <main role="main" class="withAside reverseAside">
+                <!-- Aside contenant tous les articles avec une ancre pour scroll -->
                 <aside>
-                    <ul>
-                        <li>
-                            <a href="#tutoFlStudio">Tutoriels Fl Studio</a>
-                        </li>
-                        <li>
-                            <a href="#tutosAbleton">Tutoriels Ableton</a>
-                        </li>
-                        <li>
-                            <a href="#musicTheory">Théorie Musicale</a>
-                        </li>
-                        <li>
-                            <a href="#ressourcesUtiles">Ressources Utiles</a>
-                        </li>
-                        <li>
-                            <a href="#amazonKeyboard">Synthés Amazon</a>
-                        </li>
-                    </ul>
+                    <nav aria-label="Menu des articles">
+                        <ul>
+                            <li>
+                                <a href="#tutoFlStudio">Tutoriels Fl Studio</a>
+                            </li>
+                            <li>
+                                <a href="#tutosAbleton">Tutoriels Ableton</a>
+                            </li>
+                            <li>
+                                <a href="#musicTheory">Théorie Musicale</a>
+                            </li>
+                            <li>
+                                <a href="#ressourcesUtiles">Ressources Utiles</a>
+                            </li>
+                            <li>
+                                <a href="#amazonKeyboard">Synthés Amazon</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </aside>
+                <!-- Section contenant les articles -->
                 <section>
                     <h1>Ressources pour faire de la Color Bass</h1>
+                    <!-- Tutoriels FL Studio -->
                     <article id="tutoFlStudio">
                         <h2>Tutoriels FL Studio</h2>
                         <ul>
                             <li>
-                                <a target="_blank" href="https://www.youtube.com/watch?v=6WBXD65WUTQ"> "POWERFUL COLOR BASS DROP [HOW TO]" par
+                                <a target="_blank" href="https://www.youtube.com/watch?v=6WBXD65WUTQ">
+                                    "POWERFUL COLOR BASS DROP [HOW TO]" par
                                     <b>CRWTH</b>
                                 </a>
                             </li>
                             <li>
-                                <a target="_blank" href="https://www.youtube.com/watch?v=tqD5aNj-g6A"> "HOW TO MAKE COLOUR BASS!" par
+                                <a target="_blank" href="https://www.youtube.com/watch?v=tqD5aNj-g6A">
+                                    "HOW TO MAKE COLOUR BASS!" par
                                     <b>Infowler</b>
                                 </a>
                             </li>
                             <li>
-                                <a target="_blank" href="https://www.youtube.com/watch?v=kHe-s6liVYc"> "HOW TO COLOR BASS" par
+                                <a target="_blank" href="https://www.youtube.com/watch?v=kHe-s6liVYc">
+                                    "HOW TO COLOR BASS" par
                                     <b>Looma</b>
                                 </a>
                             </li>
                             <li>
-                                <a target="_blank" href="https://www.youtube.com/watch?v=8wMs5f6RxaI"> "How To Make COLOR BASS" par
+                                <a target="_blank" href="https://www.youtube.com/watch?v=8wMs5f6RxaI">
+                                    "How To Make COLOR BASS" par
                                     <b>CyberBlitz</b>
                                 </a>
                             </li>
                         </ul>
                     </article>
+                    <!-- Tutoriels Ableton -->
                     <article id="tutosAbleton">
                         <h2>Tutoriels Ableton</h2>
                         <ul>
                             <li>
-                                <a target="_blank" href="https://www.youtube.com/watch?v=U2DeYsM4cFs"> "HOW TO CREATE COLOUR BASS IN UNDER A MINUTE" par
+                                <a target="_blank" href="https://www.youtube.com/watch?v=U2DeYsM4cFs">
+                                    "HOW TO CREATE COLOUR BASS IN UNDER A MINUTE" par
                                     <b>YokuMusic</b>
                                 </a>
                             </li>
                             <li>
-                                <a target="_blank" href="https://www.youtube.com/watch?v=AkStN2lgA7M"> "How to Color Bass" par
+                                <a target="_blank" href="https://www.youtube.com/watch?v=AkStN2lgA7M">
+                                    "How to Color Bass" par
                                     <b>Ash</b>
                                 </a>
                             </li>
                             <li>
-                                <a target="_blank" href="https://www.youtube.com/watch?v=uGNtWeDrmnc"> "The secret to watery colour bass" par
+                                <a target="_blank" href="https://www.youtube.com/watch?v=uGNtWeDrmnc">
+                                    "The secret to watery colour bass" par
                                     <b>Ash</b>
                                 </a>
                             </li>
                             <li>
-                                <a target="_blank" href="https://www.youtube.com/watch?v=F4AMGdNceJg"> "HOW TO MAKE COLOR BASS IN ABLETON LIVE" par
+                                <a target="_blank" href="https://www.youtube.com/watch?v=F4AMGdNceJg">
+                                    "HOW TO MAKE COLOR BASS IN ABLETON LIVE" par
                                     <b>Ovasenpai</b>
                                 </a>
                             </li>
                         </ul>
                     </article>
+                    <!-- Théorie Musicale -->
                     <article id="musicTheory">
                         <h2>Théorie Musicale</h2>
                         <ul>
@@ -125,6 +141,7 @@
                             </li>
                         </ul>
                     </article>
+                    <!-- Ressources utiles -->
                     <article id="ressourcesUtiles">
                         <h2>Ressources Utiles</h2>
                         <ul>
@@ -139,6 +156,7 @@
                             </li>
                         </ul>
                     </article>
+                    <!-- Claviers amazons -->
                     <article id="amazonKeyboard">
                         <h2>Synthétiseurs Amazon</h2>
                         <ul>
@@ -158,26 +176,37 @@
                     </article>
                 </section>
             </main>
+            <!-- Footer -->
             <footer role="contentinfo" class="parallax column">
                 <p>Sité réalisé par Martin Brönnimann</p>
                 <p>Dans le cadre de la SAE 105</p>
-                <ul class="row gap">
-                    <li>
-                        <a href="./a_propos.html">CGU</a>
-                    </li>
-                    <li>
-                        <a href="./ressources.html">Ressources</a>
-                    </li>
-                    <li>
-                        <a href="./logiciels.html">Logiciels</a>
-                    </li>
-                    <li>
-                        <a href="./artistes.html">Artistes</a>
-                    </li>
-                    <li>
-                        <a href="./contact.html">Contact</a>
-                    </li>
-                </ul>
+                <nav aria-label="Navigation du footer">
+                    <ul class="row gap">
+                        <li>
+                            <a href="./a_propos.html">CGU</a>
+                        </li>
+                        <li>
+                            <a href="./ressources.html">Ressources</a>
+                        </li>
+                        <li>
+                            <a href="./logiciels.html">Logiciels</a>
+                        </li>
+                        <li>
+                            <a href="./artistes.html">Artistes</a>
+                        </li>
+                        <li>
+                            <a href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="row langues">
+                    <a href="#FR">
+                        <img src="./img/flags/france.png" alt="Site en Français">
+                    </a>
+                    <a href="#UNKNOWN">
+                        <img src="./img/flags/unknown.png" alt="Site en ***">
+                    </a>
+                </div>
             </footer>
         </div>
     </body>

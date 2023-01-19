@@ -13,7 +13,8 @@
                 <img src="./img/logo.png" alt="logo-color-bass">
                 <h1>CONTACT</h1>
             </header>
-            <nav role="navigation" aria-label="Menu principal">
+            <!-- Navbar (Avec la classe mainNavbar pour la différencier des nav présentes dans les aside) -->
+            <nav class="mainNavbar" role="navigation" aria-label="Menu principal">
                 <ul>
                     <li>
                         <a href="/">Accueil</a>
@@ -24,10 +25,10 @@
                     <li>
                         <a href="/logiciels.html">Logiciels</a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="/artistes.html">Artistes</a>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="/contact.html">Contact</a>
                     </li>
                     <li>
@@ -36,9 +37,11 @@
                 </ul>
             </nav>
             <main role="main">
+                <!-- Formulaire de contact contenu dans cette section -->
                 <section>
                     <h1>REMPLISSEZ CE FORMULAIRE</h1>
                     <form method="post">
+                        <!-- Fieldset pour le sexe de l'user -->
                         <fieldset>
                             <legend>Votre sexe:</legend>
                             <input type="radio" name="sexe" id="female">
@@ -50,9 +53,11 @@
                             <input type="radio" name="sexe" id="none">
                             <label for="none">Je ne préfère pas répondre</label>
                         </fieldset>
+                        <!-- Informations sur la raison du contact & autres -->
                         <fieldset>
                             <legend>Informations:</legend>
-                            <div>
+                            <!-- Mit dans des divs pour juste mettre en row -->
+                            <div class="row">
                                 <label>Raison de votre contact:</label>
                                 <select name="raison">
                                     <option value="pb" selected>Un problème avec le site</option>
@@ -60,7 +65,7 @@
                                     <option value="rp">Un rapport de bug ou de faille de sécurité sur le site</option>
                                 </select>
                             </div>
-                            <div>
+                            <div class="row">
                                 <label>Votre nom:</label>
                                 <input
                                     type="text"
@@ -69,7 +74,7 @@
                                     required
                                 >
                             </div>
-                            <div>
+                            <div class="row">
                                 <label>Votre adresse mail:</label>
                                 <input
                                     type="email"
@@ -79,17 +84,22 @@
                                 >
                             </div>
                         </fieldset>
+                        <!-- Textarea pour reccueillir les commentaires des users -->
                         <fieldset>
                             <legend>Commentaire:</legend>
                             <textarea name="comment" placeholder="Veuillez entrer vos commentaires ici."></textarea>
                         </fieldset>
+                        <!-- Checkbox pour laisser l'utilisateur le choix d'être anonyme ou non -->
                         <fieldset>
                             <legend>Infos complémentaires:</legend>
                             <input type="checkbox" name="anonymous" checked>
-                            <label>Rester anonyme (
-                                <strong> Seulement votre nom sera affecté, non pas votre adresse mail</strong>)
+                            <label>
+                                Rester anonyme (
+                                <strong> Seulement votre nom sera affecté, non pas votre adresse mail</strong>
+                                )
                             </label>
                         </fieldset>
+                        <!-- Juste un bouton submit -->
                         <fieldset>
                             <legend>Pour valider vos informations saisies :</legend>
                             <input type="submit" value="Valider">
@@ -97,26 +107,37 @@
                     </form>
                 </section>
             </main>
+            <!-- Footer -->
             <footer role="contentinfo" class="parallax column">
                 <p>Sité réalisé par Martin Brönnimann</p>
                 <p>Dans le cadre de la SAE 105</p>
-                <ul class="row gap">
-                    <li>
-                        <a href="./a_propos.html">CGU</a>
-                    </li>
-                    <li>
-                        <a href="./ressources.html">Ressources</a>
-                    </li>
-                    <li>
-                        <a href="./logiciels.html">Logiciels</a>
-                    </li>
-                    <li>
-                        <a href="./artistes.html">Artistes</a>
-                    </li>
-                    <li>
-                        <a href="./contact.html">Contact</a>
-                    </li>
-                </ul>
+                <nav aria-label="Navigation du footer">
+                    <ul class="row gap">
+                        <li>
+                            <a href="./a_propos.html">CGU</a>
+                        </li>
+                        <li>
+                            <a href="./ressources.html">Ressources</a>
+                        </li>
+                        <li>
+                            <a href="./logiciels.html">Logiciels</a>
+                        </li>
+                        <li>
+                            <a href="./artistes.html">Artistes</a>
+                        </li>
+                        <li>
+                            <a href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="row langues">
+                    <a href="#FR">
+                        <img src="./img/flags/france.png" alt="Site en Français">
+                    </a>
+                    <a href="#UNKNOWN">
+                        <img src="./img/flags/unknown.png" alt="Site en ***">
+                    </a>
+                </div>
             </footer>
         </div>
     </body>

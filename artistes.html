@@ -14,7 +14,8 @@
                 <img src="./img/logo.png" alt="logo-color-bass">
                 <h1>Artistes</h1>
             </header>
-            <nav role="navigation" aria-label="Menu principal">
+            <!-- Navbar (Avec la classe mainNavbar pour la différencier des nav présentes dans les aside) -->
+            <nav class="mainNavbar" role="navigation" aria-label="Menu principal">
                 <ul>
                     <li>
                         <a href="/">Accueil</a>
@@ -37,27 +38,32 @@
                 </ul>
             </nav>
             <main role="main" class="withAside">
+                <!-- Aside contenant tous les articles avec une ancre pour scroll -->
                 <aside>
-                    <ul>
-                        <li>
-                            <a href="#chime">Chime</a>
-                        </li>
-                        <li>
-                            <a href="#sharks">Sharks</a>
-                        </li>
-                        <li>
-                            <a href="#aceAura">Ace Aura</a>
-                        </li>
-                        <li>
-                            <a href="#skybreak">Skybreak</a>
-                        </li>
-                        <li>
-                            <a href="#similarOutskirts">Similar Outskirts</a>
-                        </li>
-                    </ul>
+                    <nav aria-label="Menu des articles">
+                        <ul>
+                            <li>
+                                <a href="#chime">Chime</a>
+                            </li>
+                            <li>
+                                <a href="#sharks">Sharks</a>
+                            </li>
+                            <li>
+                                <a href="#aceAura">Ace Aura</a>
+                            </li>
+                            <li>
+                                <a href="#skybreak">Skybreak</a>
+                            </li>
+                            <li>
+                                <a href="#similarOutskirts">Similar Outskirts</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </aside>
+                <!-- Section contenant les articles -->
                 <section>
                     <h1>Artistes étant reconnus pour faire de la Color Bass</h1>
+                    <!-- Chime -->
                     <article id="chime">
                         <h2>Chime</h2>
                         <figure class="artisteImage">
@@ -111,6 +117,7 @@
                             </ul>
                         </details>
                     </article>
+                    <!-- Sharks -->
                     <article id="sharks">
                         <h2>Sharks</h2>
                         <figure class="artisteImage">
@@ -164,6 +171,7 @@
                             </ul>
                         </details>
                     </article>
+                    <!-- Ace Aura -->
                     <article id="aceAura">
                         <h2>Ace Aura</h2>
                         <figure class="artisteImage">
@@ -217,6 +225,7 @@
                             </ul>
                         </details>
                     </article>
+                    <!-- Skybreak -->
                     <article id="skybreak">
                         <h2>Skybreak</h2>
                         <figure class="artisteImage">
@@ -270,6 +279,7 @@
                             </ul>
                         </details>
                     </article>
+                    <!-- Similar outskirts -->
                     <article id="similarOutskirts">
                         <h2>Similar Outskirts</h2>
                         <figure class="artisteImage">
@@ -325,26 +335,37 @@
                     </article>
                 </section>
             </main>
+            <!-- Footer -->
             <footer role="contentinfo" class="parallax column">
                 <p>Sité réalisé par Martin Brönnimann</p>
                 <p>Dans le cadre de la SAE 105</p>
-                <ul class="row gap">
-                    <li>
-                        <a href="./a_propos.html">CGU</a>
-                    </li>
-                    <li>
-                        <a href="./ressources.html">Ressources</a>
-                    </li>
-                    <li>
-                        <a href="./logiciels.html">Logiciels</a>
-                    </li>
-                    <li>
-                        <a href="./artistes.html">Artistes</a>
-                    </li>
-                    <li>
-                        <a href="./contact.html">Contact</a>
-                    </li>
-                </ul>
+                <nav aria-label="Navigation du footer">
+                    <ul class="row gap">
+                        <li>
+                            <a href="./a_propos.html">CGU</a>
+                        </li>
+                        <li>
+                            <a href="./ressources.html">Ressources</a>
+                        </li>
+                        <li>
+                            <a href="./logiciels.html">Logiciels</a>
+                        </li>
+                        <li>
+                            <a href="./artistes.html">Artistes</a>
+                        </li>
+                        <li>
+                            <a href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="row langues">
+                    <a href="#FR">
+                        <img src="./img/flags/france.png" alt="Site en Français">
+                    </a>
+                    <a href="#UNKNOWN">
+                        <img src="./img/flags/unknown.png" alt="Site en ***">
+                    </a>
+                </div>
             </footer>
         </div>
     </body>

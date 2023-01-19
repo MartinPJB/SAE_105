@@ -1,137 +1,123 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Propos | Color bass</title>
-
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/categories.css">
-</head>
-
-<body>
-    <div class="wrapper">
-        <!-- Header -->
-        <header role="banner" class="parallax column">
-            <img src="./img/logo.png" alt="logo-color-bass">
-            <h1>CONTACT</h1>
-        </header>
-
-        <!-- Navbar -->
-        <nav role="navigation" aria-label="Menu principal">
-            <ul>
-                <li>
-                    <a href="/">Accueil</a>
-                </li>
-                <li>
-                    <a href="/ressources.html">Ressources</a>
-                </li>
-                <li>
-                    <a href="/logiciels.html">Logiciels</a>
-                </li>
-                <li>
-                    <a href="/artistes.html">Artistes</a>
-                </li>
-                <li class="active">
-                    <a href="/contact.html">Contact</a>
-                </li>
-                <li>
-                    <a href="/a_propos.html">A propos</a>
-                </li>
-            </ul>
-        </nav>
-
-        <!-- Contenu Principal -->
-        <main role="main">
-            <section>
-                <h1>REMPLISSEZ CE FORMULAIRE</h1>
-
-                <form method="post">
-                    <fieldset>
-                        <legend>Votre sexe:</legend>
-
-                        <input type="radio" name="sexe" id="female">
-                        <label for="female">Femme</label>
-
-                        <input type="radio" name="sexe" id="male">
-                        <label for="male">Homme</label>
-
-                        <input type="radio" name="sexe" id="other">
-                        <label for="other">Autre</label>
-
-                        <input type="radio" name="sexe" id="none">
-                        <label for="none">Je ne préfère pas répondre</label>
-                    </fieldset>
-
-                    <fieldset>
-                        <legend>Informations:</legend>
-
-                        <div>
-                            <label>Raison de votre contact:</label>
-                            <select name="raison">
-                                <option value="pb" selected>Un problème avec le site</option>
-                                <option value="qt">Une question relative au contenu du site</option>
-                                <option value="rp">Un rapport de bug ou de faille de sécurité sur le site</option>
-                            </select>
-                        </div>
-
-                        <div>
-                            <label>Votre nom:</label>
-                            <input type="text" name="nom" placeholder="Jean Dupont" required>
-                        </div>
-
-                        <div>
-                            <label>Votre adresse mail:</label>
-                            <input type="email" name="mail" placeholder="jdupont67@gmail.com" required>
-                        </div>
-                    </fieldset>
-
-                    <fieldset>
-                        <legend>Commentaire:</legend>
-                        <textarea name="comment" placeholder="Veuillez entrer vos commentaires ici."></textarea>
-                    </fieldset>
-
-                    <fieldset>
-                        <legend>Infos complémentaires:</legend>
-                        <input type="checkbox" name="anonymous" checked>
-                        <label>Rester anonyme (<strong>Seulement votre nom sera affecté, non pas votre
-                                adresse mail</strong>)</label>
-                    </fieldset>
-
-                    <fieldset>
-                        <legend>Pour valider vos informations saisies :</legend>
-                        <input type="submit" value="Valider">
-                    </fieldset>
-                </form>
-            </section>
-        </main>
-
-        <!-- Footer -->
-        <footer role="contentinfo" class="parallax column">
-            <p>Sité réalisé par Martin Brönnimann</p>
-            <p>Dans le cadre de la SAE 105</p>
-            <ul class="row gap">
-                <li>
-                    <a href="./a_propos.html">CGU</a>
-                </li>
-                <li>
-                    <a href="./ressources.html">Ressources</a>
-                </li>
-                <li>
-                    <a href="./logiciels.html">Logiciels</a>
-                </li>
-                <li>
-                    <a href="./artistes.html">Artistes</a>
-                </li>
-                <li>
-                    <a href="./contact.html">Contact</a>
-                </li>
-            </ul>
-        </footer>
-    </div>
-
-</body>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact | Color bass</title>
+        <link rel="stylesheet" href="./css/index.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header role="banner" class="parallax column">
+                <img src="./img/logo.png" alt="logo-color-bass">
+                <h1>CONTACT</h1>
+            </header>
+            <nav role="navigation" aria-label="Menu principal">
+                <ul>
+                    <li>
+                        <a href="/">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="/ressources.html">Ressources</a>
+                    </li>
+                    <li>
+                        <a href="/logiciels.html">Logiciels</a>
+                    </li>
+                    <li>
+                        <a href="/artistes.html">Artistes</a>
+                    </li>
+                    <li class="active">
+                        <a href="/contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="/a_propos.html">A propos</a>
+                    </li>
+                </ul>
+            </nav>
+            <main role="main">
+                <section>
+                    <h1>REMPLISSEZ CE FORMULAIRE</h1>
+                    <form method="post">
+                        <fieldset>
+                            <legend>Votre sexe:</legend>
+                            <input type="radio" name="sexe" id="female">
+                            <label for="female">Femme</label>
+                            <input type="radio" name="sexe" id="male">
+                            <label for="male">Homme</label>
+                            <input type="radio" name="sexe" id="other">
+                            <label for="other">Autre</label>
+                            <input type="radio" name="sexe" id="none">
+                            <label for="none">Je ne préfère pas répondre</label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Informations:</legend>
+                            <div>
+                                <label>Raison de votre contact:</label>
+                                <select name="raison">
+                                    <option value="pb" selected>Un problème avec le site</option>
+                                    <option value="qt">Une question relative au contenu du site</option>
+                                    <option value="rp">Un rapport de bug ou de faille de sécurité sur le site</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label>Votre nom:</label>
+                                <input
+                                    type="text"
+                                    name="nom"
+                                    placeholder="Jean Dupont"
+                                    required
+                                >
+                            </div>
+                            <div>
+                                <label>Votre adresse mail:</label>
+                                <input
+                                    type="email"
+                                    name="mail"
+                                    placeholder="jdupont67@gmail.com"
+                                    required
+                                >
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Commentaire:</legend>
+                            <textarea name="comment" placeholder="Veuillez entrer vos commentaires ici."></textarea>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Infos complémentaires:</legend>
+                            <input type="checkbox" name="anonymous" checked>
+                            <label>Rester anonyme (
+                                <strong> Seulement votre nom sera affecté, non pas votre adresse mail</strong>)
+                            </label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Pour valider vos informations saisies :</legend>
+                            <input type="submit" value="Valider">
+                        </fieldset>
+                    </form>
+                </section>
+            </main>
+            <footer role="contentinfo" class="parallax column">
+                <p>Sité réalisé par Martin Brönnimann</p>
+                <p>Dans le cadre de la SAE 105</p>
+                <ul class="row gap">
+                    <li>
+                        <a href="./a_propos.html">CGU</a>
+                    </li>
+                    <li>
+                        <a href="./ressources.html">Ressources</a>
+                    </li>
+                    <li>
+                        <a href="./logiciels.html">Logiciels</a>
+                    </li>
+                    <li>
+                        <a href="./artistes.html">Artistes</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </footer>
+        </div>
+    </body>
 </html>

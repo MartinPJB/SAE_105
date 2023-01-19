@@ -43,50 +43,6 @@ main {
     height: fit-content;
 }
 
-main.withAside {
-    flex-direction: row;
-}
-
-main.withAside.reverseAside {
-    flex-direction: row-reverse;
-}
-
-main.withAside aside {
-    flex: .5;
-    background-color: rgb(var(--dark));
-}
-
-main.withAside section {
-    flex: 1;
-    align-items: flex-start;
-}
-
-/* Aside */
-aside ul {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-aside ul li {
-    width: 100%;
-    height: 3rem;
-    text-align: center;
-    transition: background-color .5s ease;
-}
-aside ul li:hover {
-    background-color: var(--background-color-light);
-}
-aside ul li a {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--light);
-}
-
 /* Classe pour l'effet de parallax */
 .parallax {
     position: relative;
@@ -138,16 +94,6 @@ h3 {
     margin: 0;
 }
 
-/* Hgroup */
-hgroup {
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-hgroup * {
-    margin: 0;
-}
-
 /* Form */
 form fieldset {
     border: .5px solid rgba(128, 128, 128, .3);
@@ -181,58 +127,6 @@ form fieldset textarea {
     width:calc(100% - 1.5rem * 2);
     padding: 1rem 1.5rem;
     height: 5rem;
-}
-
-/* Tables */
-table {
-    margin-top: 1rem;
-    border-collapse: collapse;
-    font-family: 'Lato', sans-serif;
-    border-radius: 10px;
-    overflow: hidden;
-    margin-bottom: 1rem;
-}
-
-table td,
-table th {
-    padding: 15px;
-}
-
-table thead th {
-    background-color: rgb(var(--main-color));
-    color: #ffffff;
-    font-weight: bold;
-    font-family: 'Prompt', sans-serif;
-    font-size: 1rem;
-}
-
-table thead th:first-child {
-    border-top-left-radius: 10px;
-}
-
-table thead th:last-child {
-    border-top-right-radius: 10px;
-}
-
-table tbody td {
-    color: rgb(var(--dark));
-    border: 1px solid rgba(var(--dark), .2);
-}
-
-table tbody tr {
-    background-color: rgba(var(--dark), .05);
-}
-
-table tbody, table tbody tr:last-child td:first-child {
-    border-bottom-left-radius: 10px;
-}
-
-table tbody, table tbody tr:last-child td:last-child {
-    border-bottom-right-radius: 10px;
-}
-
-table tbody tr:nth-child(odd) {
-    background-color: var(--light);
 }
 
 /* Inputs */
@@ -290,27 +184,15 @@ a:hover {
     opacity: .8;
 }
 
-/* Changement de style des q */
-q {
-    font-family: 'Lato', sans-serif;
-    font-style: italic;
-    margin: 1rem 0;
-    opacity: .8;
-}
-
-/* Changement de dl dt dd */
-dl {
+/* Articles */
+article {
+    border: .5px solid rgba(128, 128, 128, .5);
+    border-radius: 10px;
+    margin: 0;
     margin-bottom: 1rem;
-}
-
-dl dt {
-    font-family: 'Prompt', sans-serif;
-    font-weight: bold;
-}
-
-dl dd {
-    font-family: 'Lato', sans-serif;
-    margin-bottom: .5rem;
+    padding: 1rem 2rem !important;
+    width: calc(100% - 4rem);
+    /* Retire 4rem car sinon ne respecte pas le padding */
 }
 
 /* Header */
@@ -378,29 +260,6 @@ iframe {
     -webkit-animation: fadeIn 1.2s ease;
             animation: fadeIn 1.2s ease;
     border: none;
-}
-
-/* Details */
-details {
-    border: .5px solid rgba(128, 128, 128, .5);
-    border-radius: 10px;
-    padding: 0.5em 0.5em 0;
-}
-
-summary {
-    font-family: 'Prompt', sans-serif;
-    font-weight: bold;
-    margin: -0.5em -0.5em 0;
-    padding: 0.5em 1rem;
-}
-
-details[open] {
-    padding: 0.5em;
-}
-
-details[open] summary {
-    border-bottom: .5px solid rgba(128, 128, 128, .5);
-    margin-bottom: 0.5em;
 }
 
 /* Navbar */

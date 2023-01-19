@@ -6,10 +6,39 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>A Propos | Color bass</title>
         <link rel="stylesheet" href="./css/index.css">
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./img/favicons/favicon-32x32.png"
+        >
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./img/favicons/favicon-16x16.png"
+        >
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./img/favicons/android-chrome-192x192.png"
+        >
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="512x512"
+            href="./img/favicons/android-chrome-512x512.png"
+        >
+        <link rel="shortcut icon" href="./img/favicons/favicon.ico" type="image/x-icon">
+        <link rel="manifest" href="./img/favicons/site.webmanifest">
     </head>
     <body>
         <div class="wrapper">
-            <header role="banner" class="parallax column">
+            <header role="banner" class="parallax column centreVertical centreHorizontal">
                 <img src="./img/logo.png" alt="logo-color-bass">
                 <h1>A PROPOS</h1>
             </header>
@@ -25,13 +54,13 @@
                     <li>
                         <a href="/logiciels.html">Logiciels</a>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="/artistes.html">Artistes</a>
                     </li>
                     <li>
                         <a href="/contact.html">Contact</a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="/a_propos.html">A propos</a>
                     </li>
                 </ul>
@@ -108,31 +137,85 @@
             <footer role="contentinfo" class="parallax column">
                 <p>Sité réalisé par Martin Brönnimann</p>
                 <p>Dans le cadre de la SAE 105</p>
-                <nav aria-label="Navigation du footer">
-                    <ul class="row gap">
+                <nav aria-label="Footer contenant liens pour les catégories ainsi que de leurs articles">
+                    <ul class="row gap centreHorizontal">
                         <li>
                             <a href="./a_propos.html">CGU</a>
                         </li>
                         <li>
                             <a href="./ressources.html">Ressources</a>
+                            <!-- Contient les liens des articles de ressources.html -->
+                            <ul class="lowOpacity column">
+                                <li>
+                                    <a href="./ressources.html#tutoFlStudio">Tutoriels Fl Studio</a>
+                                </li>
+                                <li>
+                                    <a href="./ressources.html#tutosAbleton">Tutoriels Ableton</a>
+                                </li>
+                                <li>
+                                    <a href="./ressources.html#musicTheory">Théorie Musicale</a>
+                                </li>
+                                <li>
+                                    <a href="./ressources.html#ressourcesUtiles">Ressources Utiles</a>
+                                </li>
+                                <li>
+                                    <a href="./ressources.html#amazonKeyboard">Synthés Amazon</a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
                             <a href="./logiciels.html">Logiciels</a>
+                            <!-- Contient les liens des articles de logiciels.html -->
+                            <ul class="lowOpacity column">
+                                <li>
+                                    <a href="./logiciels.html#flStudio">Fl Studio</a>
+                                </li>
+                                <li>
+                                    <a href="./logiciels.html#ableton">Ableton Live</a>
+                                </li>
+                                <li>
+                                    <a href="./logiciels.html#bitwig">Bitwig Studio</a>
+                                </li>
+                                <li>
+                                    <a href="./logiciels.html#logicPro">Logic Pro</a>
+                                </li>
+                                <li>
+                                    <a href="./logiciels.html#proTools">Pro Tools</a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
                             <a href="./artistes.html">Artistes</a>
+                            <!-- Contient les liens des articles de artistes.html -->
+                            <ul class="lowOpacity column">
+                                <li>
+                                    <a href="./artistes.html#chime">Chime</a>
+                                </li>
+                                <li>
+                                    <a href="./artistes.html#sharks">Sharks</a>
+                                </li>
+                                <li>
+                                    <a href="./artistes.html#aceAura">Ace Aura</a>
+                                </li>
+                                <li>
+                                    <a href="./artistes.html#skybreak">Skybreak</a>
+                                </li>
+                                <li>
+                                    <a href="./artistes.html#similarOutskirts">Similar Outskirts</a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
                             <a href="./contact.html">Contact</a>
                         </li>
                     </ul>
                 </nav>
-                <div class="row langues">
+                <div class="row langues centreHorizontal">
                     <a href="#FR">
-                        <img src="./img/flags/france.png" alt="Site en Français">
+                        <img src="./img/flags/france.png" alt="Icône Drapeau FR pour contenu du site">
                     </a>
-                    <a href="#UNKNOWN">
-                        <img src="./img/flags/unknown.png" alt="Site en ***">
+                    <a href="#DK">
+                        <img src="./img/flags/danmark.png" alt="Icône Drapeau DK pour contenu du site">
                     </a>
                 </div>
             </footer>

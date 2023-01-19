@@ -1,0 +1,40 @@
+/* 
+    Fichier CSS contenant tous les éléments de style présents dans le
+    fichier html de la page de contact (contact.html)
+*/
+/* Form */
+form fieldset {
+    display: flex;
+    flex-direction: column;
+    border: .5px solid rgba(128, 128, 128, .3);
+    border-radius: 10px;
+    padding: 1rem 2rem 1.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Lato', sans-serif;
+}
+
+form fieldset legend {
+    padding: 0 1rem;
+    font-family: 'Prompt', sans-serif;
+}
+
+form fieldset div {
+    justify-content: space-between;
+    align-items: center;
+}
+
+form fieldset div:not(:last-of-type) {
+    margin-bottom: 1rem;
+}
+
+form fieldset div input[type="text"],
+form fieldset div input[type="email"],
+form fieldset div select {
+    width: 15rem;
+}
+
+form fieldset textarea {
+    width: calc(100% - 1.5rem * 2);
+    padding: 1rem 1.5rem;
+    height: 5rem;
+}

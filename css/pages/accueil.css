@@ -1,0 +1,13 @@
+/* 
+    Fichier CSS contenant tous les éléments de style présents dans le
+    fichier html de la page d'accueil (index.html)
+*/
+/* Iframe */
+iframe {
+    border-radius: 10px;
+    width: 16rem;
+    height: 10rem;
+    -webkit-animation: fadeIn 1.2s ease;
+    animation: fadeIn 1.2s ease;
+    border: none;
+}

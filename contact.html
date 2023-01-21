@@ -8,32 +8,8 @@
         <link rel="stylesheet" href="./css/index.css">
         <link rel="stylesheet" href="./css/pages/contact.css">
 
-        <!-- Favicon -->
-        <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="./img/favicons/favicon-32x32.png"
-        >
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="16x16"
-            href="./img/favicons/favicon-16x16.png"
-        >
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="192x192"
-            href="./img/favicons/android-chrome-192x192.png"
-        >
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="512x512"
-            href="./img/favicons/android-chrome-512x512.png"
-        >
+        <!-- Favicon & Manifest-->
+        <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon.png">
         <link rel="shortcut icon" href="./img/favicons/favicon.ico" type="image/x-icon">
         <link rel="manifest" href="./img/favicons/site.webmanifest">
     </head>
@@ -46,31 +22,20 @@
             <!-- Navbar (Avec la classe mainNavbar pour la différencier des nav présentes dans les aside) -->
             <nav class="mainNavbar" role="navigation" aria-label="Menu principal">
                 <ul>
-                    <li>
-                        <a href="/">Accueil</a>
-                    </li>
-                    <li>
-                        <a href="/ressources.html">Ressources</a>
-                    </li>
-                    <li>
-                        <a href="/logiciels.html">Logiciels</a>
-                    </li>
-                    <li>
-                        <a href="/artistes.html">Artistes</a>
-                    </li>
-                    <li class="active">
-                        <a href="/contact.html">Contact</a>
-                    </li>
-                    <li>
-                        <a href="/a_propos.html">A propos</a>
-                    </li>
+                    <li><a href="/">Accueil</a></li>
+                    <li><a href="/ressources.html">Ressources</a></li>
+                    <li><a href="/logiciels.html">Logiciels</a></li>
+                    <li><a href="/artistes.html">Artistes</a></li>
+                    <li class="active"><a href="/contact.html">Contact</a></li>
+                    <li><a href="/a_propos.html">A propos</a></li>
                 </ul>
             </nav>
+            <!-- Main qui contient 1 section avec mon formulaire de contact (fieldsets, inputs etc...) -->
             <main role="main">
                 <!-- Formulaire de contact contenu dans cette section -->
                 <section>
                     <h1>REMPLISSEZ CE FORMULAIRE</h1>
-                    <form method="post">
+                    <form method="post" action="/contact.html">
                         <!-- Fieldset pour le sexe de l'user -->
                         <fieldset>
                             <legend>Votre sexe:</legend>
@@ -106,21 +71,11 @@
                             </div>
                             <div class="row">
                                 <label>Votre nom:</label>
-                                <input
-                                    type="text"
-                                    name="nom"
-                                    placeholder="Jean Dupont"
-                                    required
-                                >
+                                <input type="text" name="nom" placeholder="Jean Dupont" required>
                             </div>
                             <div class="row">
                                 <label>Votre adresse mail:</label>
-                                <input
-                                    type="email"
-                                    name="mail"
-                                    placeholder="jdupont67@gmail.com"
-                                    required
-                                >
+                                <input type="email" name="mail" placeholder="jdupont67@gmail.com" required>
                             </div>
                         </fieldset>
                         <!-- Textarea pour reccueillir les commentaires des users -->
@@ -132,11 +87,7 @@
                         <fieldset>
                             <legend>Infos complémentaires:</legend>
                             <input type="checkbox" name="anonymous" checked>
-                            <label>
-                                Rester anonyme (
-                                <strong> Seulement votre nom sera affecté, non pas votre adresse mail</strong>
-                                )
-                            </label>
+                            <label>Rester anonyme (<strong> Seulement votre nom sera affecté, non pas votre adresse mail</strong>)</label>
                         </fieldset>
                         <!-- Juste un bouton submit -->
                         <fieldset>
@@ -152,84 +103,46 @@
                 <p>Dans le cadre de la SAE 105</p>
                 <nav aria-label="Footer contenant liens pour les catégories ainsi que de leurs articles">
                     <ul class="row gap centreHorizontal">
-                        <li>
-                            <a href="./a_propos.html">CGU</a>
-                        </li>
+                        <li><a href="./a_propos.html">CGU</a></li>
                         <li>
                             <a href="./ressources.html">Ressources</a>
                             <!-- Contient les liens des articles de ressources.html -->
                             <ul class="lowOpacity column">
-                                <li>
-                                    <a href="./ressources.html#tutoFlStudio">Tutoriels Fl Studio</a>
-                                </li>
-                                <li>
-                                    <a href="./ressources.html#tutosAbleton">Tutoriels Ableton</a>
-                                </li>
-                                <li>
-                                    <a href="./ressources.html#musicTheory">Théorie Musicale</a>
-                                </li>
-                                <li>
-                                    <a href="./ressources.html#ressourcesUtiles">Ressources Utiles</a>
-                                </li>
-                                <li>
-                                    <a href="./ressources.html#amazonKeyboard">Synthés Amazon</a>
-                                </li>
+                                <li><a href="./ressources.html#tutoFlStudio">Tutoriels Fl Studio</a></li>
+                                <li><a href="./ressources.html#tutosAbleton">Tutoriels Ableton</a></li>
+                                <li><a href="./ressources.html#musicTheory">Théorie Musicale</a></li>
+                                <li><a href="./ressources.html#ressourcesUtiles">Ressources Utiles</a></li>
+                                <li><a href="./ressources.html#amazonKeyboard">Synthés Amazon</a></li>
                             </ul>
                         </li>
                         <li>
                             <a href="./logiciels.html">Logiciels</a>
                             <!-- Contient les liens des articles de logiciels.html -->
                             <ul class="lowOpacity column">
-                                <li>
-                                    <a href="./logiciels.html#flStudio">Fl Studio</a>
-                                </li>
-                                <li>
-                                    <a href="./logiciels.html#ableton">Ableton Live</a>
-                                </li>
-                                <li>
-                                    <a href="./logiciels.html#bitwig">Bitwig Studio</a>
-                                </li>
-                                <li>
-                                    <a href="./logiciels.html#logicPro">Logic Pro</a>
-                                </li>
-                                <li>
-                                    <a href="./logiciels.html#proTools">Pro Tools</a>
-                                </li>
+                                <li><a href="./logiciels.html#flStudio">Fl Studio</a></li>
+                                <li><a href="./logiciels.html#ableton">Ableton Live</a></li>
+                                <li><a href="./logiciels.html#bitwig">Bitwig Studio</a></li>
+                                <li><a href="./logiciels.html#logicPro">Logic Pro</a></li>
+                                <li><a href="./logiciels.html#proTools">Pro Tools</a></li>
                             </ul>
                         </li>
                         <li>
                             <a href="./artistes.html">Artistes</a>
                             <!-- Contient les liens des articles de artistes.html -->
                             <ul class="lowOpacity column">
-                                <li>
-                                    <a href="./artistes.html#chime">Chime</a>
-                                </li>
-                                <li>
-                                    <a href="./artistes.html#sharks">Sharks</a>
-                                </li>
-                                <li>
-                                    <a href="./artistes.html#aceAura">Ace Aura</a>
-                                </li>
-                                <li>
-                                    <a href="./artistes.html#skybreak">Skybreak</a>
-                                </li>
-                                <li>
-                                    <a href="./artistes.html#similarOutskirts">Similar Outskirts</a>
-                                </li>
+                                <li><a href="./artistes.html#chime">Chime</a></li>
+                                <li><a href="./artistes.html#sharks">Sharks</a></li>
+                                <li><a href="./artistes.html#aceAura">Ace Aura</a></li>
+                                <li><a href="./artistes.html#skybreak">Skybreak</a></li>
+                                <li><a href="./artistes.html#similarOutskirts">Similar Outskirts</a></li>
                             </ul>
                         </li>
-                        <li>
-                            <a href="./contact.html">Contact</a>
-                        </li>
+                        <li><a href="./contact.html">Contact</a></li>
                     </ul>
                 </nav>
                 <div class="row langues centreHorizontal">
-                    <a href="#FR">
-                        <img src="./img/flags/france.png" alt="Icône Drapeau FR pour contenu du site">
-                    </a>
-                    <a href="#DK">
-                        <img src="./img/flags/danmark.png" alt="Icône Drapeau DK pour contenu du site">
-                    </a>
+                    <a href="#FR"><img src="./img/flags/france.png" alt="Icône Drapeau FR pour contenu du site"></a>
+                    <a href="#DK"><img src="./img/flags/danmark.png" alt="Icône Drapeau DK pour contenu du site"></a>
                 </div>
             </footer>
         </div>

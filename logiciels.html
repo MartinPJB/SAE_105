@@ -9,32 +9,8 @@
         <link rel="stylesheet" href="./css/categories.css">
         <script src="./js/buttonRedirecter.js" async defer></script>
 
-        <!-- Favicon -->
-        <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="./img/favicons/favicon-32x32.png"
-        >
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="16x16"
-            href="./img/favicons/favicon-16x16.png"
-        >
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="192x192"
-            href="./img/favicons/android-chrome-192x192.png"
-        >
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="512x512"
-            href="./img/favicons/android-chrome-512x512.png"
-        >
+        <!-- Favicon & Manifest-->
+        <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon.png">
         <link rel="shortcut icon" href="./img/favicons/favicon.ico" type="image/x-icon">
         <link rel="manifest" href="./img/favicons/site.webmanifest">
     </head>
@@ -47,46 +23,25 @@
             <!-- Navbar (Avec la classe mainNavbar pour la différencier des nav présentes dans les aside) -->
             <nav class="mainNavbar" role="navigation" aria-label="Menu principal">
                 <ul>
-                    <li>
-                        <a href="/">Accueil</a>
-                    </li>
-                    <li>
-                        <a href="/ressources.html">Ressources</a>
-                    </li>
-                    <li class="active">
-                        <a href="/logiciels.html">Logiciels</a>
-                    </li>
-                    <li>
-                        <a href="/artistes.html">Artistes</a>
-                    </li>
-                    <li>
-                        <a href="/contact.html">Contact</a>
-                    </li>
-                    <li>
-                        <a href="/a_propos.html">A propos</a>
-                    </li>
+                    <li><a href="/">Accueil</a></li>
+                    <li><a href="/ressources.html">Ressources</a></li>
+                    <li class="active"><a href="/logiciels.html">Logiciels</a></li>
+                    <li><a href="/artistes.html">Artistes</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                    <li><a href="/a_propos.html">A propos</a></li>
                 </ul>
             </nav>
+            <!-- Main qui contient 1 section avec mes articles (Articles qui contiennent des images, une balise q pour une citation, un paragraphe, un bouton ainsi qu'une balise dl) -->
             <main role="main" class="withAside">
                 <!-- Aside contenant tous les articles avec une ancre pour scroll -->
                 <aside>
                     <nav aria-label="Menu des articles">
                         <ul>
-                            <li>
-                                <a href="#flStudio">Fl Studio</a>
-                            </li>
-                            <li>
-                                <a href="#ableton">Ableton Live</a>
-                            </li>
-                            <li>
-                                <a href="#bitwig">Bitwig Studio</a>
-                            </li>
-                            <li>
-                                <a href="#logicPro">Logic Pro</a>
-                            </li>
-                            <li>
-                                <a href="#proTools">Pro Tools</a>
-                            </li>
+                            <li><a href="#flStudio">Fl Studio</a></li>
+                            <li><a href="#ableton">Ableton Live</a></li>
+                            <li><a href="#bitwig">Bitwig Studio</a></li>
+                            <li><a href="#logicPro">Logic Pro</a></li>
+                            <li><a href="#proTools">Pro Tools</a></li>
                         </ul>
                     </nav>
                 </aside>
@@ -97,7 +52,7 @@
                     <article id="flStudio">
                         <h2>FL Studio</h2>
                         <q cite="https://image-line.com/">The fastest way from your brain to your speakers</q>
-                        <p> FL Studio est un logiciel de production musicale connu également sous le nom de Fruity Loops. Il est développé par la société belge Image-Line Software. Il permet de créer, de produire et de mixer de la musique électronique sur un ordinateur personnel. Il offre une variété d'outils pour l'enregistrement, l'édition, la manipulation et la manipulation de pistes audio, ainsi que des fonctionnalités de synthétiseur virtuel, de boîte à rythmes et d'effets pour créer des morceaux de musique complets. Il est très populaire auprès des DJ, producteurs de musique et musiciens amateurs pour sa facilité d'utilisation et sa grande variété de fonctionnalités.</p>
+                        <p>FL Studio est un logiciel de production musicale connu également sous le nom de Fruity Loops. Il est développé par la société belge Image-Line Software. Il permet de créer, de produire et de mixer de la musique électronique sur un ordinateur personnel. Il offre une variété d'outils pour l'enregistrement, l'édition, la manipulation et la manipulation de pistes audio, ainsi que des fonctionnalités de synthétiseur virtuel, de boîte à rythmes et d'effets pour créer des morceaux de musique complets. Il est très populaire auprès des DJ, producteurs de musique et musiciens amateurs pour sa facilité d'utilisation et sa grande variété de fonctionnalités.</p>
                         <figure>
                             <img src="./img/logiciels/FLSTUDIO.jpg" alt="Interface logiciel FL Studio">
                             <figcaption>Interface du logiciel FL Studio</figcaption>
@@ -105,25 +60,25 @@
                         <p>FL Studio contient une variété de fonctionnalités pour la production musicale:</p>
                         <dl>
                             <dt>Éditeur de pistes:</dt>
-                            <dd> permet de créer, de modifier et de synchroniser des pistes audio et MIDI.</dd>
+                            <dd>Permet de créer, de modifier et de synchroniser des pistes audio et MIDI.</dd>
                             <dt>Synthétiseurs virtuels:</dt>
-                            <dd> offre une variété de synthétiseurs, y compris des synthétiseurs FM, des synthétiseurs à ondes, des synthétiseurs à modélisation physique, et plus encore.</dd>
+                            <dd>Offre une variété de synthétiseurs, y compris des synthétiseurs FM, des synthétiseurs à ondes, des synthétiseurs à modélisation physique, et plus encore.</dd>
                             <dt>Boîtes à rythmes:</dt>
-                            <dd> offre une variété de boîtes à rythmes, y compris des boîtes à rythmes de batterie, des boîtes à rythmes de basse, des boîtes à rythmes de percussions, et plus encore.</dd>
+                            <dd>Offre une variété de boîtes à rythmes, y compris des boîtes à rythmes de batterie, des boîtes à rythmes de basse, des boîtes à rythmes de percussions, et plus encore.</dd>
                             <dt>Effets:</dt>
-                            <dd> offre une variété d'effets audio, tels que des réverbérations, des delays, des filtres, des distorsions, des égalisations, et plus encore.</dd>
+                            <dd>Offre une variété d'effets audio, tels que des réverbérations, des delays, des filtres, des distorsions, des égalisations, et plus encore.</dd>
                             <dt>Enregistrement audio:</dt>
-                            <dd> permet d'enregistrer des pistes audio en direct à partir d'un microphone ou d'une interface audio.</dd>
+                            <dd>Permet d'enregistrer des pistes audio en direct à partir d'un microphone ou d'une interface audio.</dd>
                             <dt>Mixage et mastering:</dt>
-                            <dd> offre des outils pour mixer les pistes et pour les mastering pour les rendre plus professionnel.</dd>
+                            <dd>Offre des outils pour mixer les pistes et pour les mastering pour les rendre plus professionnel.</dd>
                             <dt>Automatisation:</dt>
-                            <dd> permet de créer des courbes d'automatisation pour les paramètres de plugins et de pistes.</dd>
+                            <dd>Permet de créer des courbes d'automatisation pour les paramètres de plugins et de pistes.</dd>
                             <dt>Prise en charge de plusieurs formats:</dt>
-                            <dd> prend en charge les formats audio tels que WAV, MP3, OGG, MIDI, et plus encore.</dd>
+                            <dd>Prend en charge les formats audio tels que WAV, MP3, OGG, MIDI, et plus encore.</dd>
                             <dt>Prise en charge de plusieurs plateformes:</dt>
-                            <dd>est disponible pour Windows et Mac.</dd>
+                            <dd>Est disponible pour Windows et Mac.</dd>
                             <dt>Interface utilisateur personnalisable:</dt>
-                            <dd> permet de personnaliser l'interface utilisateur pour s'adapter à vos besoins de production.</dd>
+                            <dd>Permet de personnaliser l'interface utilisateur pour s'adapter à vos besoins de production.</dd>
                         </dl>
                         <button data-clickRedirectHref="https://www.image-line.com/">Visiter leur site</button>
                     </article>
@@ -131,27 +86,27 @@
                     <article id="ableton">
                         <h2>Ableton Live</h2>
                         <q cite="https://www.ableton.com/en/live/">Add more feeling to your music</q>
-                        <p> Ableton Live est un logiciel de production musicale qui permet à l'utilisateur de créer, enregistrer, produire et mixer de la musique électronique. Il offre des fonctionnalités de composition en temps réel, de manipulation de clips audio et de contrôle MIDI. Il existe en deux versions: Ableton Live Standard et Ableton Live Suite. La version Suite inclut des instruments virtuels et des effets supplémentaires. Ableton Live est utilisé par de nombreux musiciens, producteurs et DJ pour créer de la musique en studio et pour les performances en direct.</p>
+                        <p>Ableton Live est un logiciel de production musicale qui permet à l'utilisateur de créer, enregistrer, produire et mixer de la musique électronique. Il offre des fonctionnalités de composition en temps réel, de manipulation de clips audio et de contrôle MIDI. Il existe en deux versions: Ableton Live Standard et Ableton Live Suite. La version Suite inclut des instruments virtuels et des effets supplémentaires. Ableton Live est utilisé par de nombreux musiciens, producteurs et DJ pour créer de la musique en studio et pour les performances en direct.</p>
                         <figure>
                             <img src="./img/logiciels/ABLETON.jpg" alt="Interface logiciel Ableton Live">
                             <figcaption>Interface du logiciel Ableton Live</figcaption>
                         </figure>
-                        <p> Ableton Live possède de nombreuses fonctionnalités pour la création, l'enregistrement et le mixage de la musique électronique. Voici quelques-unes des fonctionnalités principales:</p>
+                        <p>Ableton Live possède de nombreuses fonctionnalités pour la création, l'enregistrement et le mixage de la musique électronique. Voici quelques-unes des fonctionnalités principales:</p>
                         <dl>
                             <dt>Composition en temps réel:</dt>
-                            <dd> Ableton Live permet de créer des morceaux en utilisant des clips audio et MIDI qui peuvent être lancés, synchronisés et bouclés en temps réel.</dd>
+                            <dd>Ableton Live permet de créer des morceaux en utilisant des clips audio et MIDI qui peuvent être lancés, synchronisés et bouclés en temps réel.</dd>
                             <dt>Enregistrement audio et MIDI:</dt>
-                            <dd> Ableton Live permet d'enregistrer des pistes audio et MIDI à partir de sources externes, comme des instruments électroniques ou des microphones.</dd>
+                            <dd>Ableton Live permet d'enregistrer des pistes audio et MIDI à partir de sources externes, comme des instruments électroniques ou des microphones.</dd>
                             <dt>Edition audio et MIDI:</dt>
-                            <dd> Ableton Live possède des outils d'édition pour couper, découper, déplacer et retravailler les clips audio et MIDI.</dd>
+                            <dd>Ableton Live possède des outils d'édition pour couper, découper, déplacer et retravailler les clips audio et MIDI.</dd>
                             <dt>Effets audio et MIDI:</dt>
-                            <dd> Ableton Live inclut une variété d'effets audio et MIDI pour ajouter de la profondeur et de la texture à vos morceaux.</dd>
+                            <dd>Ableton Live inclut une variété d'effets audio et MIDI pour ajouter de la profondeur et de la texture à vos morceaux.</dd>
                             <dt>Instruments virtuels:</dt>
-                            <dd> La version Ableton Live Suite inclut des instruments virtuels, tels que des synthétiseurs, des boîtes à rythmes et des instruments acoustiques virtuels.</dd>
+                            <dd>La version Ableton Live Suite inclut des instruments virtuels, tels que des synthétiseurs, des boîtes à rythmes et des instruments acoustiques virtuels.</dd>
                             <dt>Mixage:</dt>
-                            <dd> Ableton Live permet de mixer les différentes pistes audio et MIDI pour créer une balance sonore équilibrée dans votre morceau.</dd>
+                            <dd>Ableton Live permet de mixer les différentes pistes audio et MIDI pour créer une balance sonore équilibrée dans votre morceau.</dd>
                             <dt>Performance en direct:</dt>
-                            <dd> Ableton Live est conçu pour les performances en direct, avec des fonctionnalités telles que le lancement de clips en temps réel et la possibilité de contrôler les paramètres en direct à l'aide d'un contrôleur MIDI externe.</dd>
+                            <dd>Ableton Live est conçu pour les performances en direct, avec des fonctionnalités telles que le lancement de clips en temps réel et la possibilité de contrôler les paramètres en direct à l'aide d'un contrôleur MIDI externe.</dd>
                         </dl>
                         <button data-clickRedirectHref="https://www.ableton.com/en/live/">Visiter leur site</button>
                     </article>
@@ -159,33 +114,33 @@
                     <article id="bitwig">
                         <h2>Bitwig Studio</h2>
                         <q cite="https://www.bitwig.com/"> Modern music production and performance for Windows, macOS, and Linux.</q>
-                        <p> Bitwig Studio est un logiciel de production musicale pour Windows, macOS, et Linux. Il permet à l'utilisateur de créer, enregistrer, produire et mixer de la musique électronique. Il offre des fonctionnalités de composition en temps réel, de manipulation de clips audio et de contrôle MIDI, similaires à Ableton Live. Il inclut des instruments virtuels, des effets audio, des outils de mixage et d'édition, ainsi qu'un support pour les contrôleurs MIDI externes. Bitwig Studio est souvent comparé à Ableton Live en raison de sa fonctionnalité similaire, mais il ajoute des fonctionnalités uniques telles que la modélisation de l'onde sonore, la polyvalence de modélisation de l'onde de forme d'onde, et un système de modulation modulaire. Il est utilisé par de nombreux producteurs, musiciens et DJ pour créer de la musique en studio et pour les performances en direct.</p>
+                        <p>Bitwig Studio est un logiciel de production musicale pour Windows, macOS, et Linux. Il permet à l'utilisateur de créer, enregistrer, produire et mixer de la musique électronique. Il offre des fonctionnalités de composition en temps réel, de manipulation de clips audio et de contrôle MIDI, similaires à Ableton Live. Il inclut des instruments virtuels, des effets audio, des outils de mixage et d'édition, ainsi qu'un support pour les contrôleurs MIDI externes. Bitwig Studio est souvent comparé à Ableton Live en raison de sa fonctionnalité similaire, mais il ajoute des fonctionnalités uniques telles que la modélisation de l'onde sonore, la polyvalence de modélisation de l'onde de forme d'onde, et un système de modulation modulaire. Il est utilisé par de nombreux producteurs, musiciens et DJ pour créer de la musique en studio et pour les performances en direct.</p>
                         <figure>
                             <img src="./img/logiciels/BITWIG.jpg" alt="Interface logiciel Bitwig Studio">
                             <figcaption>Interface du logiciel Bitwig Studio</figcaption>
                         </figure>
-                        <p> Bitwig Studio possède de nombreuses fonctionnalités pour la création, l'enregistrement et le mixage de la musique électronique. Voici quelques-unes des fonctionnalités principales:</p>
+                        <p>Bitwig Studio possède de nombreuses fonctionnalités pour la création, l'enregistrement et le mixage de la musique électronique. Voici quelques-unes des fonctionnalités principales:</p>
                         <dl>
                             <dt>Composition en temps réel:</dt>
-                            <dd> Bitwig Studio permet de créer des morceaux en utilisant des clips audio et MIDI qui peuvent être lancés, synchronisés et bouclés en temps réel.</dd>
+                            <dd>Bitwig Studio permet de créer des morceaux en utilisant des clips audio et MIDI qui peuvent être lancés, synchronisés et bouclés en temps réel.</dd>
                             <dt>Enregistrement audio et MIDI:</dt>
-                            <dd> Bitwig Studio permet d'enregistrer des pistes audio et MIDI à partir de sources externes, comme des instruments électroniques ou des microphones.</dd>
+                            <dd>Bitwig Studio permet d'enregistrer des pistes audio et MIDI à partir de sources externes, comme des instruments électroniques ou des microphones.</dd>
                             <dt>Edition audio et MIDI:</dt>
-                            <dd> Bitwig Studio possède des outils d'édition pour couper, découper, déplacer et retravailler les clips audio et MIDI.</dd>
+                            <dd>Bitwig Studio possède des outils d'édition pour couper, découper, déplacer et retravailler les clips audio et MIDI.</dd>
                             <dt>Effets audio et MIDI:</dt>
-                            <dd> Bitwig Studio inclut une variété d'effets audio et MIDI pour ajouter de la profondeur et de la texture à vos morceaux.</dd>
+                            <dd>Bitwig Studio inclut une variété d'effets audio et MIDI pour ajouter de la profondeur et de la texture à vos morceaux.</dd>
                             <dt>Instruments virtuels:</dt>
-                            <dd> Bitwig Studio inclut des instruments virtuels, tels que des synthétiseurs, des boîtes à rythmes et des instruments acoustiques virtuels.</dd>
+                            <dd>Bitwig Studio inclut des instruments virtuels, tels que des synthétiseurs, des boîtes à rythmes et des instruments acoustiques virtuels.</dd>
                             <dt>Mixage:</dt>
-                            <dd> Bitwig Studio permet de mixer les différentes pistes audio et MIDI pour créer une balance sonore équilibrée dans votre morceau.</dd>
+                            <dd>Bitwig Studio permet de mixer les différentes pistes audio et MIDI pour créer une balance sonore équilibrée dans votre morceau.</dd>
                             <dt>Performance en direct:</dt>
-                            <dd> Bitwig Studio est conçu pour les performances en direct, avec des fonctionnalités telles que le lancement de clips en temps réel et la possibilité de contrôler les paramètres en direct à l'aide d'un contrôleur MIDI externe.</dd>
+                            <dd>Bitwig Studio est conçu pour les performances en direct, avec des fonctionnalités telles que le lancement de clips en temps réel et la possibilité de contrôler les paramètres en direct à l'aide d'un contrôleur MIDI externe.</dd>
                             <dt>Système de modulation modulaire:</dt>
-                            <dd> Bitwig Studio inclut un système de modulation modulaire pour créer des relations modulatoires entre différents paramètres.</dd>
+                            <dd>Bitwig Studio inclut un système de modulation modulaire pour créer des relations modulatoires entre différents paramètres.</dd>
                             <dt>Modélisation de l'onde sonore:</dt>
-                            <dd> Bitwig Studio inclut des outils pour la modélisation de l'onde sonore pour des effets de synthétiseurs.</dd>
+                            <dd>Bitwig Studio inclut des outils pour la modélisation de l'onde sonore pour des effets de synthétiseurs.</dd>
                             <dt>Polyvalence de modélisation de l'onde de forme d'onde:</dt>
-                            <dd> Bitwig Studio permet de déformer et de transformer les formes d'onde audio pour créer des sons uniques.</dd>
+                            <dd>Bitwig Studio permet de déformer et de transformer les formes d'onde audio pour créer des sons uniques.</dd>
                         </dl>
                         <button data-clickRedirectHref="https://bitwig.com/">Visiter leur site</button>
                     </article>
@@ -193,33 +148,33 @@
                     <article id="logicPro">
                         <h2>Logic Pro</h2>
                         <q cite="https://www.apple.com/fr/logic-pro/">Terriblement puissant. Merveilleusement créatif.</q>
-                        <p> Logic Pro est un logiciel de production musicale pour Mac. Il permet à l'utilisateur de créer, enregistrer, produire et mixer de la musique électronique. Il offre des fonctionnalités de composition en temps réel, de manipulation de clips audio et de contrôle MIDI. Il inclut des instruments virtuels, des effets audio, des outils de mixage et d'édition, ainsi qu'un support pour les contrôleurs MIDI externes. Logic Pro est utilisé par de nombreux producteurs, musiciens et DJ pour créer de la musique en studio et pour les performances en direct.</p>
+                        <p>Logic Pro est un logiciel de production musicale pour Mac. Il permet à l'utilisateur de créer, enregistrer, produire et mixer de la musique électronique. Il offre des fonctionnalités de composition en temps réel, de manipulation de clips audio et de contrôle MIDI. Il inclut des instruments virtuels, des effets audio, des outils de mixage et d'édition, ainsi qu'un support pour les contrôleurs MIDI externes. Logic Pro est utilisé par de nombreux producteurs, musiciens et DJ pour créer de la musique en studio et pour les performances en direct.</p>
                         <figure>
                             <img src="./img/logiciels/LOGIC_PRO.jpg" alt="Interface logiciel Logic Pro">
                             <figcaption>Interface du logiciel Logic Pro</figcaption>
                         </figure>
-                        <p> Logic Pro possède de nombreuses fonctionnalités pour la création, l'enregistrement et le mixage de la musique électronique. Voici quelques-unes des fonctionnalités principales:</p>
+                        <p>Logic Pro possède de nombreuses fonctionnalités pour la création, l'enregistrement et le mixage de la musique électronique. Voici quelques-unes des fonctionnalités principales:</p>
                         <dl>
                             <dt>Composition en temps réel:</dt>
-                            <dd> Logic Pro permet de créer des morceaux en utilisant des clips audio et MIDI qui peuvent être lancés, synchronisés et bouclés en temps réel.</dd>
+                            <dd>Logic Pro permet de créer des morceaux en utilisant des clips audio et MIDI qui peuvent être lancés, synchronisés et bouclés en temps réel.</dd>
                             <dt>Enregistrement audio et MIDI:</dt>
-                            <dd> Logic Pro permet d'enregistrer des pistes audio et MIDI à partir de sources externes, comme des instruments électroniques ou des microphones.</dd>
+                            <dd>Logic Pro permet d'enregistrer des pistes audio et MIDI à partir de sources externes, comme des instruments électroniques ou des microphones.</dd>
                             <dt>Edition audio et MIDI:</dt>
-                            <dd> Logic Pro possède des outils d'édition pour couper, découper, déplacer et retravailler les clips audio et MIDI.</dd>
+                            <dd>Logic Pro possède des outils d'édition pour couper, découper, déplacer et retravailler les clips audio et MIDI.</dd>
                             <dt>Effets audio et MIDI:</dt>
-                            <dd> Logic Pro inclut une variété d'effets audio et MIDI pour ajouter de la profondeur et de la texture à vos morceaux.</dd>
+                            <dd>Logic Pro inclut une variété d'effets audio et MIDI pour ajouter de la profondeur et de la texture à vos morceaux.</dd>
                             <dt>Instruments virtuels:</dt>
-                            <dd> Logic Pro inclut des instruments virtuels, tels que des synthétiseurs, des boîtes à rythmes et des instruments acoustiques virtuels.</dd>
+                            <dd>Logic Pro inclut des instruments virtuels, tels que des synthétiseurs, des boîtes à rythmes et des instruments acoustiques virtuels.</dd>
                             <dt>Mixage:</dt>
-                            <dd> Logic Pro permet de mixer les différentes pistes audio et MIDI pour créer une balance sonore équilibrée dans votre morceau.</dd>
+                            <dd>Logic Pro permet de mixer les différentes pistes audio et MIDI pour créer une balance sonore équilibrée dans votre morceau.</dd>
                             <dt>Performance en direct:</dt>
-                            <dd> Logic Pro est conçu pour les performances en direct, avec des fonctionnalités telles que le lancement de clips en temps réel et la possibilité de contrôler les paramètres en direct à l'aide d'un contrôleur MIDI externe.</dd>
+                            <dd>Logic Pro est conçu pour les performances en direct, avec des fonctionnalités telles que le lancement de clips en temps réel et la possibilité de contrôler les paramètres en direct à l'aide d'un contrôleur MIDI externe.</dd>
                             <dt>Fonctionnalités avancées de composition:</dt>
-                            <dd> Logic Pro inclut des fonctionnalités avancées pour la composition, telles que des outils pour la création de rythmiques, des outils pour la création de boucles, et des outils pour la création de motifs.</dd>
+                            <dd>Logic Pro inclut des fonctionnalités avancées pour la composition, telles que des outils pour la création de rythmiques, des outils pour la création de boucles, et des outils pour la création de motifs.</dd>
                             <dt>Outils de mixage professionnels:</dt>
-                            <dd> Logic Pro inclut des outils de mixage professionnels pour créer des balances sonores équilibrées et pour ajouter des effets professionnels à vos morceaux.</dd>
+                            <dd>Logic Pro inclut des outils de mixage professionnels pour créer des balances sonores équilibrées et pour ajouter des effets professionnels à vos morceaux.</dd>
                             <dt>Support pour les plug-ins:</dt>
-                            <dd> Logic Pro supporte les plug-ins VST et AU pour ajouter encore plus de fonctionnalités à votre workflow de production musicale.</dd>
+                            <dd>Logic Pro supporte les plug-ins VST et AU pour ajouter encore plus de fonctionnalités à votre workflow de production musicale.</dd>
                         </dl>
                         <button data-clickRedirectHref="https://www.apple.com/fr/logic-pro/">Visiter leur site</button>
                     </article>
@@ -227,12 +182,12 @@
                     <article id="proTools">
                         <h2>Pro Tools</h2>
                         <q cite="https://www.avid.com/pro-tools">Legendary music starts here.</q>
-                        <p> Pro Tools est un logiciel de production audio pour Mac et Windows. Il permet à l'utilisateur de créer, enregistrer, produire et mixer de la musique électronique, des films, des émissions de télévision, des podcasts et bien plus encore. Il offre des fonctionnalités d'enregistrement audio et MIDI, d'édition audio, d'effets audio, d'outils de mixage et de composition. Il supporte les plug-ins VST et AU pour ajouter encore plus de fonctionnalités à votre workflow de production audio. Pro Tools est utilisé par de nombreux studios d'enregistrement, producteurs, musiciens, compositeurs et ingénieurs du son pour créer des projets audio de haute qualité.</p>
+                        <p>Pro Tools est un logiciel de production audio pour Mac et Windows. Il permet à l'utilisateur de créer, enregistrer, produire et mixer de la musique électronique, des films, des émissions de télévision, des podcasts et bien plus encore. Il offre des fonctionnalités d'enregistrement audio et MIDI, d'édition audio, d'effets audio, d'outils de mixage et de composition. Il supporte les plug-ins VST et AU pour ajouter encore plus de fonctionnalités à votre workflow de production audio. Pro Tools est utilisé par de nombreux studios d'enregistrement, producteurs, musiciens, compositeurs et ingénieurs du son pour créer des projets audio de haute qualité.</p>
                         <figure>
                             <img src="./img/logiciels/PRO_TOOLS.jpg" alt="Interface logiciel Pro Tools">
                             <figcaption>Interface du logiciel Pro Tools</figcaption>
                         </figure>
-                        <p> Pro Tools possède de nombreuses fonctionnalités pour la création, l'enregistrement, le mixage et la post-production audio. Voici quelques-unes des fonctionnalités principales:</p>
+                        <p>Pro Tools possède de nombreuses fonctionnalités pour la création, l'enregistrement, le mixage et la post-production audio. Voici quelques-unes des fonctionnalités principales:</p>
                         <dl>
                             <dt>Enregistrement audio et MIDI:</dt>
                             <dd>Pro Tools permet d'enregistrer des pistes audio et MIDI à partir de sources externes, comme des instruments électroniques ou des microphones.</dd>
@@ -251,84 +206,46 @@
                 <p>Dans le cadre de la SAE 105</p>
                 <nav aria-label="Footer contenant liens pour les catégories ainsi que de leurs articles">
                     <ul class="row gap centreHorizontal">
-                        <li>
-                            <a href="./a_propos.html">CGU</a>
-                        </li>
+                        <li><a href="./a_propos.html">CGU</a></li>
                         <li>
                             <a href="./ressources.html">Ressources</a>
                             <!-- Contient les liens des articles de ressources.html -->
                             <ul class="lowOpacity column">
-                                <li>
-                                    <a href="./ressources.html#tutoFlStudio">Tutoriels Fl Studio</a>
-                                </li>
-                                <li>
-                                    <a href="./ressources.html#tutosAbleton">Tutoriels Ableton</a>
-                                </li>
-                                <li>
-                                    <a href="./ressources.html#musicTheory">Théorie Musicale</a>
-                                </li>
-                                <li>
-                                    <a href="./ressources.html#ressourcesUtiles">Ressources Utiles</a>
-                                </li>
-                                <li>
-                                    <a href="./ressources.html#amazonKeyboard">Synthés Amazon</a>
-                                </li>
+                                <li><a href="./ressources.html#tutoFlStudio">Tutoriels Fl Studio</a></li>
+                                <li><a href="./ressources.html#tutosAbleton">Tutoriels Ableton</a></li>
+                                <li><a href="./ressources.html#musicTheory">Théorie Musicale</a></li>
+                                <li><a href="./ressources.html#ressourcesUtiles">Ressources Utiles</a></li>
+                                <li><a href="./ressources.html#amazonKeyboard">Synthés Amazon</a></li>
                             </ul>
                         </li>
                         <li>
                             <a href="./logiciels.html">Logiciels</a>
                             <!-- Contient les liens des articles de logiciels.html -->
                             <ul class="lowOpacity column">
-                                <li>
-                                    <a href="./logiciels.html#flStudio">Fl Studio</a>
-                                </li>
-                                <li>
-                                    <a href="./logiciels.html#ableton">Ableton Live</a>
-                                </li>
-                                <li>
-                                    <a href="./logiciels.html#bitwig">Bitwig Studio</a>
-                                </li>
-                                <li>
-                                    <a href="./logiciels.html#logicPro">Logic Pro</a>
-                                </li>
-                                <li>
-                                    <a href="./logiciels.html#proTools">Pro Tools</a>
-                                </li>
+                                <li><a href="./logiciels.html#flStudio">Fl Studio</a></li>
+                                <li><a href="./logiciels.html#ableton">Ableton Live</a></li>
+                                <li><a href="./logiciels.html#bitwig">Bitwig Studio</a></li>
+                                <li><a href="./logiciels.html#logicPro">Logic Pro</a></li>
+                                <li><a href="./logiciels.html#proTools">Pro Tools</a></li>
                             </ul>
                         </li>
                         <li>
                             <a href="./artistes.html">Artistes</a>
                             <!-- Contient les liens des articles de artistes.html -->
                             <ul class="lowOpacity column">
-                                <li>
-                                    <a href="./artistes.html#chime">Chime</a>
-                                </li>
-                                <li>
-                                    <a href="./artistes.html#sharks">Sharks</a>
-                                </li>
-                                <li>
-                                    <a href="./artistes.html#aceAura">Ace Aura</a>
-                                </li>
-                                <li>
-                                    <a href="./artistes.html#skybreak">Skybreak</a>
-                                </li>
-                                <li>
-                                    <a href="./artistes.html#similarOutskirts">Similar Outskirts</a>
-                                </li>
+                                <li><a href="./artistes.html#chime">Chime</a></li>
+                                <li><a href="./artistes.html#sharks">Sharks</a></li>
+                                <li><a href="./artistes.html#aceAura">Ace Aura</a></li>
+                                <li><a href="./artistes.html#skybreak">Skybreak</a></li>
+                                <li><a href="./artistes.html#similarOutskirts">Similar Outskirts</a></li>
                             </ul>
                         </li>
-                        <li>
-                            <a href="./contact.html">Contact</a>
-                        </li>
+                        <li><a href="./contact.html">Contact</a></li>
                     </ul>
                 </nav>
                 <div class="row langues centreHorizontal">
-                    <a href="#FR">
-                        <img src="./img/flags/france.png" alt="Icône Drapeau FR pour contenu du site">
-                    </a>
-                    <a href="#DK">
-                        <img src="./img/flags/danmark.png" alt="Icône Drapeau DK pour contenu du site">
-                    </a>
+                    <a href="#FR"><img src="./img/flags/france.png" alt="Icône Drapeau FR pour contenu du site"></a>
+                    <a href="#DK"><img src="./img/flags/danmark.png" alt="Icône Drapeau DK pour contenu du site"></a>
                 </div>
             </footer>
         </div>

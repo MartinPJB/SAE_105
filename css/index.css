@@ -1,3 +1,4 @@
+/* Ce fichier CSS contient tous les styles utilisés dans tous les fichiers html du projet. Il devrait être agencé dans l'ordre d'apparition des balises dans le html */
 /* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Prompt:wght@500&display=swap');
 
@@ -302,18 +303,7 @@ footer .langues img {
     opacity: .5;
 }
 
-/* Inputs */
-input[type="text"],
-input[type="email"],
-select,
-textarea {
-    border: .5px solid rgba(128, 128, 128, .3);
-    border-radius: 5px;
-    padding: 1rem;
-    resize: none;
-}
-
-/* Buttons */
+/* Buttons & input["sumbit"] */
 input[type="submit"],
 button {
     position: relative;
@@ -339,7 +329,7 @@ button:hover {
     color: var(--light);
 }
 
-/* Animations */
+/* Animations pour animer différents éléments lors de leur initiation */
 @-webkit-keyframes fadeIn {
     from {
         opacity: 0;

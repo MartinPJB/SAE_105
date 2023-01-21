@@ -2,7 +2,7 @@
     Fichier CSS contenant tous les éléments de style présents dans le
     fichier html de la page de contact (contact.html)
 */
-/* Form */
+/* Form & inputs du form */
 form fieldset {
     display: flex;
     flex-direction: column;
@@ -29,8 +29,13 @@ form fieldset div:not(:last-of-type) {
 
 form fieldset div input[type="text"],
 form fieldset div input[type="email"],
-form fieldset div select {
+form fieldset div select,
+form fieldset textarea {
     width: 15rem;
+    border: .5px solid rgba(128, 128, 128, .3);
+    border-radius: 5px;
+    padding: 1rem;
+    resize: none;
 }
 
 form fieldset textarea {

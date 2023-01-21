@@ -105,7 +105,7 @@ header h1 {
     animation: fadeIn 1.2s ease, slideIn 1s ease;
 }
 
-/* Navbar */
+/* Main Navbar (Différent des navs présentes dans les asides) */
 nav.mainNavbar {
     position: flex;
     top: 0;

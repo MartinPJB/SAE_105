@@ -22,7 +22,7 @@
 		<h2>{{ article.titre }}</h2>
 		<ul>
             {% for li in article.listePuce %}
-                <li><a target="_blank" href="{{ li[1] }}">"{{ li[0] }}" par<b>{{ li[2] }}</b></a></li>
+                <li><a target="_blank" href="{{ li[1] }}">{{ li[0] }}</a></li>
             {% endfor %}
 		</ul>
 	</article>

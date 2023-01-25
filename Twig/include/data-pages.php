@@ -8,7 +8,7 @@
 
     // Contient les données de mes pages
     $dataPages = [
-        "index.twig" => [
+        "accueil.twig" => [
             "title" => "Accueil",
             "titreHeader" => "ACCUEIL DU SITE",
             "classeMain" => "column"

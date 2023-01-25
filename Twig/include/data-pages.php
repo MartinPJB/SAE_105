@@ -3,41 +3,43 @@
     // Importe les data-articles des pages qui sont des articles (importe $dataArticles)
     include('./include/data-articles.php');
 
-    // Import les CGU pour la page a_propos.twig (importe $CGU)
+    // Import les CGU pour la page a_propos (importe $CGU)
     include('./include/data-CGUs.php');
 
     // Contient les données de mes pages
     $dataPages = [
-        "accueil.twig" => [
+        "accueil" => [
             "title" => "Accueil",
             "titreHeader" => "ACCUEIL DU SITE",
             "classeMain" => "column"
         ],
 
-        "contact.twig" => [
-            "title" => "Contact",
-            "titreHeader" => "CONTACT",
-            "classeMain" => "column"
-        ],
-
-        "a_propos.twig" => [
-            "title" => "A propos",
-            "titreHeader" => "A PROPOS",
-            "classeMain" => "column",
-            "cgus" => $CGU
-        ],
-
-        "ressources.twig" => [
+        "ressources" => [
             "title" => "Ressources",
             "titreHeader" => "RESSOURCES",
             "classeMain" => "withAside",
             "articles" => $dataArticles["ressources"]
         ],
 
-        "logiciels.twig" => [
+        "logiciels" => [
             "title" => "Logiciels",
             "titreHeader" => "LOGICIELS",
             "classeMain" => "withAside",
             "articles" => $dataArticles["logiciels"]
+        ],
+
+        // Artistes
+
+        "contact" => [
+            "title" => "Contact",
+            "titreHeader" => "CONTACT",
+            "classeMain" => "column"
+        ],
+
+        "a_propos" => [
+            "title" => "A propos",
+            "titreHeader" => "A PROPOS",
+            "classeMain" => "column",
+            "cgus" => $CGU
         ],
     ];

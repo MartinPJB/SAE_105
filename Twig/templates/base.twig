@@ -30,15 +30,9 @@
                     <!-- Utilisation de chemins relatifs pour le moment (Si le site ne se trouve par à la racine du serveur local, ça risque de rediriger sur un 404) -->
                     {% for page in pages %}
                         <li>
-                            <a href="./{{ page|replace({'.twig': ''}) }}">{{ page }}</a>
+                            <a href="./{{ page }}">{{ page|replace({"_": " "})|capitalize }}</a>
                         </li>
                     {% endfor %}
-                    {# <li class="active"><a href="./">{{ active }}</a></li>
-                    <li><a href="./ressources">Ressources</a></li>
-                    <li><a href="./logiciels">Logiciels</a></li>
-                    <li><a href="./artistes">Artistes</a></li>
-                    <li><a href="./contact">Contact</a></li>
-                    <li><a href="./a_propos">A propos</a></li> #}
                 </ul>
             </nav>
             

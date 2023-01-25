@@ -14,14 +14,11 @@
 
     $pages = array_diff(scandir("./templates/"), array('.', '..')); // Récupère les pages existantes
     $pages = array_diff($pages, array("base.twig")); // On enlève le base.twig car pas besoin pour les pages
-    asort($pages);
-
-    print_r($pages);
     
     // On va vérifier si l'endpoint est dans la liste des pages
     if ($finalEndpoint != "" && in_array($finalEndpoint.".twig", $pages)) {
-        echo $twig->render($finalEndpoint.".twig", array_merge($dataPages[$finalEndpoint.".twig"], [
-            "pages" => $pages, // <-- Les pages existantes pour la Navbar
+        echo $twig->render($finalEndpoint.".twig", array_merge($dataPages[$finalEndpoint], [
+            "pages" => array_keys($dataPages), // <-- Les pages existantes dans le data-pages pour les mettres dans la navbar automatiquement
             "active" => $finalEndpoint //  <-- L'endpoint pour vérifier la page active
         ]));
     } else {

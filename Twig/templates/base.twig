@@ -24,13 +24,14 @@
             </header>
 
             <!-- Navbar (Avec la classe mainNavbar pour la différencier des nav présentes dans les aside) -->
-            <nav class="mainNavbar" role="navigation" aria-label="Menu principal">
-            
+            <nav class="mainNavbar" role="navigation" aria-label="Menu principal">     
                 <ul>
                     <!-- Utilisation de chemins relatifs pour le moment (Si le site ne se trouve par à la racine du serveur local, ça risque de rediriger sur un 404) -->
                     {% for page in pages %}
-                        <li>
-                            <a href="./{{ page }}">{{ page|replace({"_": " "})|capitalize }}</a>
+                        {# Ajoute la classe "active" si la page de l'itération est la page active ou si la page est "Accueil" si pas d'endpoints #}
+                        <li class="{{ (active == page or (active == "" and page == "accueil")) ? 'active' : '' }}" >
+                            {# Remplace les _ en espaces et ajoute une majuscule #}
+                            <a href="./{{ page }}">{{ page|replace({"_": " "})|capitalize }}</a> 
                         </li>
                     {% endfor %}
                 </ul>
@@ -41,6 +42,7 @@
                 {% block main %}
                 {% endblock %}
             </main>
+
             <!-- Footer -->
             <footer role="contentinfo" class="parallax column">
                 <p>Sité réalisé par Martin Brönnimann</p>

@@ -28,7 +28,12 @@
             "articles" => $dataArticles["logiciels"]
         ],
 
-        // Artistes
+        "artistes" => [
+            "title" => "Artistes",
+            "titreHeader" => "ARTISTES",
+            "classeMain" => "withAside",
+            "articles" => $dataArticles["artistes"]
+        ],
 
         "contact" => [
             "title" => "Contact",

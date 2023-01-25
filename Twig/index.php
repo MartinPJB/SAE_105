@@ -15,6 +15,7 @@
     $pages = array_diff(scandir("./templates/"), array('.', '..')); // Récupère les pages existantes
     $pages = array_diff($pages, array("base.twig")); // On enlève le base.twig car pas besoin pour les pages
     
+    // Données qui vont êtres ajoutées en plus du $dataPages sur les pages twig
     $ajoutData = [
         "pages" => array_keys($dataPages), // <-- Les pages existantes dans le data-pages pour les mettres dans la navbar automatiquement
         "active" => $finalEndpoint //  <-- L'endpoint pour vérifier la page active

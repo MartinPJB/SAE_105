@@ -135,5 +135,11 @@
                     ["Supports pour les plugins", "Logic Pro supporte les plug-ins VST et AU pour ajouter encore plus de fonctionnalités à votre workflow de production musicale."],
                 ]
             ]
+        ],
+        
+        "artistes" => [
+            [
+                "titre" => "Chime"
+            ]
         ]
     ];

@@ -1,0 +1,16 @@
+{% extends "base.twig" %}
+
+{# Main #}
+{% block main %}
+	<!-- Section contenant les CGU (Chaque condition est dans un article) -->
+	<section>
+		<h1>Conditions Générales d'Utilisation du Site:</h1>
+
+		{% for condition in cgus %}
+		<article>
+			<h2>{{ condition[0] }}</h2>
+			<p>{{ condition[1] }}</p>
+		</article>
+		{% endfor %}
+	</section>
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends "article.twig" %}
+
+{# Main #}
+{% block articleAside %}
+	{# Aside contenant tous les articles avec une ancre pour scroll #}
+	<ul>
+		{% for article in articles %}
+			<li>
+				<a href="#{{ article.titre|replace({' ': ''}) }}">{{ article.titre }}</a>
+			</li>
+		{% endfor %}
+	</ul>
+{% endblock %}
+
+{% block articleSection %}
+
+    <h1>Ressources pour faire de la Color Bass</h1>
+
+    {# Une boucle pour afficher chaque article #}
+	{% for article in articles %}
+	<article id="{{ article.titre|replace({' ': ''}) }}">
+		<h2>{{ article.titre }}</h2>
+		<ul>
+            {% for li in article.listePuce %}
+                <li><a target="_blank" href="{{ li[1] }}">"{{ li[0] }}" par<b>{{ li[2] }}</b></a></li>
+            {% endfor %}
+		</ul>
+	</article>
+	{% endfor %}
+
+{% endblock %}

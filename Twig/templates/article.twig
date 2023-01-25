@@ -1,0 +1,24 @@
+{% extends "base.twig" %}
+
+{# CSS custom de l'accueil #}
+{% block cssEtJs %}
+	<link rel="stylesheet" href="./css/categories.css">
+	<script src="./js/buttonRedirecter.js" async defer></script>
+{% endblock %}
+
+{# Main #}
+{% block main %}
+	<!-- Aside contenant tous les articles avec une ancre pour scroll -->
+	<aside>
+		<nav aria-label="Menu des articles">
+			{% block articleAside %}
+            {% endblock %}
+		</nav>
+	</aside>
+
+    <!-- Section contenant les articles -->
+    <section>
+        {% block articleSection %}
+        {% endblock %}
+    </section>
+{% endblock %}

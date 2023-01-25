@@ -15,11 +15,16 @@
     $pages = array_diff(scandir("./templates/"), array('.', '..')); // Récupère les pages existantes
     $pages = array_diff($pages, array("base.twig")); // On enlève le base.twig car pas besoin pour les pages
     
+    // Récupère toutes les pages ajoutées au site depuis $dataPages et les met dans un tableau
+    $pageKeys = array_keys($dataPages);
+
     // Données qui vont êtres ajoutées en plus du $dataPages sur les pages twig
     $ajoutData = [
-        "pages" => array_keys($dataPages), // <-- Les pages existantes dans le data-pages pour les mettres dans la navbar automatiquement
-        "active" => $finalEndpoint //  <-- L'endpoint pour vérifier la page active
+        "pages" => $pageKeys, // <-- Les pages existantes dans le data-pages pour les mettres dans la navbar automatiquement
+        "active" => $finalEndpoint, //  <-- L'endpoint pour vérifier la page active
+        "footerArticles" => $dataArticles // <-- Récupère le $dataArticles pour les afficher dans le footer
     ];
+
 
     // On va vérifier si l'endpoint est dans la liste des pages
     if ($finalEndpoint != "" && in_array($finalEndpoint.".twig", $pages)) {

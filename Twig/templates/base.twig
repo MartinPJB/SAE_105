@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>{{ title }} | Color bass</title>
+        <title>{{ titre }} | Color bass</title>
         <link rel="stylesheet" href="./css/index.css">
 
         {# Custom CSS et JS qui dépendent en fonction des pages #}
@@ -49,41 +49,22 @@
                 <p>Dans le cadre de la SAE 105</p>
                 <nav aria-label="Footer contenant liens pour les catégories ainsi que de leurs articles">
                     <ul class="row gap centreHorizontal">
-                        <li><a href="./a_propos">CGU</a></li>
-                        <li>
-                            <a href="./ressources">Ressources</a>
-                            <!-- Contient les liens des articles de ressources -->
-                            <ul class="lowOpacity column">
-                                <li><a href="./ressources#tutoFlStudio">Tutoriels Fl Studio</a></li>
-                                <li><a href="./ressources#tutosAbleton">Tutoriels Ableton</a></li>
-                                <li><a href="./ressources#musicTheory">Théorie Musicale</a></li>
-                                <li><a href="./ressources#ressourcesUtiles">Ressources Utiles</a></li>
-                                <li><a href="./ressources#amazonKeyboard">Synthés Amazon</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="./logiciels">Logiciels</a>
-                            <!-- Contient les liens des articles de logiciels -->
-                            <ul class="lowOpacity column">
-                                <li><a href="./logiciels#FLStudio">Fl Studio</a></li>
-                                <li><a href="./logiciels#AbletonLive">Ableton Live</a></li>
-                                <li><a href="./logiciels#BitWig">Bitwig Studio</a></li>
-                                <li><a href="./logiciels#LogicPro">Logic Pro</a></li>
-                                <li><a href="./logiciels#ProTools">Pro Tools</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="./artistes">Artistes</a>
-                            <!-- Contient les liens des articles de artistes -->
-                            <ul class="lowOpacity column">
-                                <li><a href="./artistes#chime">Chime</a></li>
-                                <li><a href="./artistes#sharks">Sharks</a></li>
-                                <li><a href="./artistes#aceAura">Ace Aura</a></li>
-                                <li><a href="./artistes#skybreak">Skybreak</a></li>
-                                <li><a href="./artistes#similarOutskirts">Similar Outskirts</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="./contact">Contact</a></li>
+                        {# Affiche les liens dans le footer SEULEMENT si ils possèdent des articles #}
+                        {% for page in pages %}
+                            {% if footerArticles[page] is not empty %}
+                                <li>
+                                    {# Remplace les _ en espaces et ajoute une majuscule #}
+                                    <a href="./{{ page }}">{{ page|replace({"_": " "})|capitalize }}</a> 
+
+                                    <ul class="lowOpacity column">
+                                        {# Pour chaque article de la page, on ajoute un lien vers l'article #}
+                                        {% for article in footerArticles[page] %}
+                                            <li><a href="./{{ page }}#{{ article.titre }}">{{ article.titre|replace({"_": " "})|capitalize }}</a></li>
+                                        {% endfor %}
+                                    </ul>
+                                </li>
+                            {% endif %}
+                        {% endfor %}
                     </ul>
                 </nav>
                 <div class="row langues centreHorizontal">

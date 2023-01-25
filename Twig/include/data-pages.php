@@ -9,40 +9,40 @@
     // Contient les données de mes pages
     $dataPages = [
         "accueil" => [
-            "title" => "Accueil",
+            "titre" => "Accueil",
             "titreHeader" => "ACCUEIL DU SITE",
             "classeMain" => "column"
         ],
 
         "ressources" => [
-            "title" => "Ressources",
+            "titre" => "Ressources",
             "titreHeader" => "RESSOURCES",
             "classeMain" => "withAside",
             "articles" => $dataArticles["ressources"]
         ],
 
         "logiciels" => [
-            "title" => "Logiciels",
+            "titre" => "Logiciels",
             "titreHeader" => "LOGICIELS",
             "classeMain" => "withAside",
             "articles" => $dataArticles["logiciels"]
         ],
 
         "artistes" => [
-            "title" => "Artistes",
+            "titre" => "Artistes",
             "titreHeader" => "ARTISTES",
             "classeMain" => "withAside",
             "articles" => $dataArticles["artistes"]
         ],
 
         "contact" => [
-            "title" => "Contact",
+            "titre" => "Contact",
             "titreHeader" => "CONTACT",
             "classeMain" => "column"
         ],
 
         "a_propos" => [
-            "title" => "A propos",
+            "titre" => "A propos",
             "titreHeader" => "A PROPOS",
             "classeMain" => "column",
             "cgus" => $CGU

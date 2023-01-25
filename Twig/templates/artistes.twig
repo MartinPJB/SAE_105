@@ -14,18 +14,43 @@
 
 {% block articleSection %}
 
-    <h1>Artistes étant reconnus pour faire de la Color Bass</h1>
+	<h1>Artistes étant reconnus pour faire de la Color Bass</h1>
 
-    {# Une boucle pour afficher chaque article #}
+	{# Une boucle pour afficher chaque article #}
 	{% for article in articles %}
-	{# <article id="{{ article.titre|replace({' ': ''}) }}">
-		<h2>{{ article.titre }}</h2>
-		<ul>
-            {% for li in article.listePuce %}
-                <li><a target="_blank" href="{{ li[1] }}">{{ li[0] }}</a></li>
-            {% endfor %}
-		</ul>
-	</article> #}
-	{% endfor %}
+		<article id="{{ article.titre|replace({' ': ''}) }}">
+			<h2>{{ article.titre }}</h2>
 
+			<figure class="artisteImage">
+				<img src="./img/artistes/{{ article.img }}.jpg" alt="Visage de {{ article.titre }}">
+				<figcaption>{{ article.titre }} ({{ article.informations["Prénom / Nom"] }})</figcaption>
+			</figure>
+
+			<table>
+				<thead>
+					<tr>
+						<th colspan="2">Informations</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					{% for titreInfo, valeurInfo in article.informations %}
+						<tr>
+							<td>{{ titreInfo }}</td>
+							<td>{{ valeurInfo }}</td>
+						</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+
+			<details>
+                <summary>Liens</summary>
+                <ul>
+					{% for plateforme, lien in article.liens %}
+						<li><a href="{{ lien }}" target="_blank">Son {{ plateforme }}</a></li>
+					{% endfor %}
+                </ul>
+            </details>
+		</article>
+	{% endfor %}
 {% endblock %}

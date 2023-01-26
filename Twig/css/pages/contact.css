@@ -43,3 +43,7 @@ form fieldset textarea {
     padding: 1rem 1.5rem;
     height: 5rem;
 }
+
+form label {
+    display: inline-block;
+}

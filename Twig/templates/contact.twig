@@ -2,74 +2,72 @@
 
 {# CSS custom de l'accueil #}
 {% block cssEtJs %}
-	<link rel="stylesheet" href="./css/pages/contact.css">
+	<link rel="stylesheet" href="../css/pages/contact.css">
 {% endblock %}
 
 {# Main #}
 {% block main %}
 	<!-- Formulaire de contact contenu dans cette section -->
 	<section>
-		<h1>REMPLISSEZ CE FORMULAIRE</h1>
-		<form
-			method="post" action="./contact.html">
+		<h1>{{ traduction.h1 }}</h1>
+		<form method="post" action="./contact.html">
 			<!-- Fieldset pour le sexe de l'user -->
 			<fieldset>
-				<legend>Votre sexe:</legend>
+				<legend>{{ traduction.legends.sexe }}:</legend>
 				<!-- Mit dans des divs pour juste mettre en row -->
 				<div>
 					<input type="radio" name="sexe" id="female">
-					<label for="female">Femme</label>
+					<label for="female">{{ traduction.labels.woman }}</label>
 				</div>
 				<div>
 					<input type="radio" name="sexe" id="male">
-					<label for="male">Homme</label>
+					<label for="male">{{ traduction.labels.man }}</label>
 				</div>
 				<div>
 					<input type="radio" name="sexe" id="other">
-					<label for="other">Autre</label>
+					<label for="other">{{ traduction.labels.other }}</label>
 				</div>
 				<div>
 					<input type="radio" name="sexe" id="none">
-					<label for="none">Je ne préfère pas répondre</label>
+					<label for="none">{{ traduction.labels.none }}</label>
 				</div>
 			</fieldset>
 			<!-- Informations sur la raison du contact & autres -->
 			<fieldset>
-				<legend>Informations:</legend>
+				<legend>{{ traduction.legends.info }}:</legend>
 				<!-- Mit dans des divs pour juste mettre en row -->
 				<div class="row">
-					<label>Raison de votre contact:</label>
+					<label>{{ traduction.labels.reason }}:</label>
 					<select name="raison">
-						<option value="pb" selected>Un problème avec le site</option>
-						<option value="qt">Une question relative au contenu du site</option>
-						<option value="rp">Un rapport de bug ou de faille de sécurité sur le site</option>
+						<option value="pb" selected>{{ traduction.select.problem }}</option>
+						<option value="qt">{{ traduction.select.question }}</option>
+						<option value="rp">{{ traduction.select.report }}</option>
 					</select>
 				</div>
 				<div class="row">
-					<label>Votre nom:</label>
+					<label>{{ traduction.labels.name }}:</label>
 					<input type="text" name="nom" placeholder="Jean Dupont" required>
 				</div>
 				<div class="row">
-					<label>Votre adresse mail:</label>
+					<label>{{ traduction.labels.mail }}:</label>
 					<input type="email" name="mail" placeholder="jdupont67@gmail.com" required>
 				</div>
 			</fieldset>
 			<!-- Textarea pour reccueillir les commentaires des users -->
 			<fieldset>
-				<legend>Commentaire:</legend>
-				<textarea name="comment" placeholder="Veuillez entrer vos commentaires ici."></textarea>
+				<legend>{{ traduction.legends.comment }}:</legend>
+				<textarea name="comment" placeholder="{{ traduction.labels.commentPlaceholder }}"></textarea>
 			</fieldset>
 			<!-- Checkbox pour laisser l'utilisateur le choix d'être anonyme ou non -->
 			<fieldset>
-				<legend>Infos complémentaires:</legend>
+				<legend>{{ traduction.legends.infoPlus }}:</legend>
 				<input type="checkbox" name="anonymous" checked>
-				<label>Rester anonyme (<strong>
-						Seulement votre nom sera affecté, non pas votre adresse mail</strong>)</label>
+				<label>{{ traduction.labels.anonymous }} (<strong>{{ traduction.labels.anonymousDetail }}</strong>)</label>
 			</fieldset>
 			<!-- Juste un bouton submit -->
 			<fieldset>
-				<legend>Pour valider vos informations saisies :</legend>
-				<input type="submit" value="Valider">
+				<legend>{{ traduction.legends.submitMsg }}:</legend>
+				<input type="submit" value="{{ traduction.legends.submit }}">
 			</fieldset>
 		</form>
 	</section>

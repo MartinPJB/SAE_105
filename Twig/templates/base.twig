@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
+        {# Info, les chemins relatifs doivent avoir deux points devant "../" car le serveur considère la langue comme un dossier #}
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>{{ titre }} | Color bass</title>
-        <link rel="stylesheet" href="./css/index.css">
+        <link rel="stylesheet" href="../css/index.css">
 
         {# Custom CSS et JS qui dépendent en fonction des pages #}
         {% block cssEtJs %}
         {% endblock %}
 
         <!-- Favicon & Manifest -->
-        <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon.png">
-        <link rel="shortcut icon" href="./img/favicons/favicon.ico" type="image/x-icon">
-        <link rel="manifest" href="./img/favicons/site.webmanifest">
+        <link rel="icon" type="image/png" sizes="32x32" href="../img/favicons/favicon.png">
+        <link rel="shortcut icon" href="../img/favicons/favicon.ico" type="image/x-icon">
+        <link rel="manifest" href="../img/favicons/site.webmanifest">
     </head>
     <body>
         <div class="wrapper">
             <header role="banner" class="parallax column centreVertical centreHorizontal">
-                <img src="./img/logo.png" alt="logo-color-bass">
+                <img src="../img/logo.png" alt="logo-color-bass">
                 <h1>{{ titreHeader }}</h1>
             </header>
 
@@ -31,7 +32,7 @@
                         {# Ajoute la classe "active" si la page de l'itération est la page active ou si la page est "Accueil" si pas d'endpoints #}
                         <li class="{{ (active == page or (active == "" and page == "accueil")) ? 'active' : '' }}" >
                             {# Remplace les _ en espaces et ajoute une majuscule #}
-                            <a href="./{{ page }}">{{ page|replace({"_": " "})|capitalize }}</a> 
+                            <a href="./{{ page }}">{{ traductionsNomPages[loop.index - 1] }}</a> 
                         </li>
                     {% endfor %}
                 </ul>
@@ -45,21 +46,21 @@
 
             <!-- Footer -->
             <footer role="contentinfo" class="parallax column">
-                <p>Sité réalisé par Martin Brönnimann</p>
-                <p>Dans le cadre de la SAE 105</p>
-                <nav aria-label="Footer contenant liens pour les catégories ainsi que de leurs articles">
+                <p>{{ __trad.footer.creator }}</p>
+                <p>{{ __trad.footer.context }}</p>
+                <nav aria-label="{{ __trad.footer["label-nav"] }}">
                     <ul class="row gap centreHorizontal">
                         {# Affiche les liens dans le footer SEULEMENT si ils possèdent des articles #}
                         {% for page in pages %}
                             {% if footerArticles[page] is not empty %}
                                 <li>
                                     {# Remplace les _ en espaces et ajoute une majuscule #}
-                                    <a href="./{{ page }}">{{ page|replace({"_": " "})|capitalize }}</a> 
+                                    <a href="./{{ page }}">{{ traductionsNomPages[loop.index - 1] }}</a> 
 
                                     <ul class="lowOpacity column">
                                         {# Pour chaque article de la page, on ajoute un lien vers l'article #}
                                         {% for article in footerArticles[page] %}
-                                            <li><a href="./{{ page }}#{{ article.titre }}">{{ article.titre|replace({"_": " "})|capitalize }}</a></li>
+                                            <li><a href="./{{ page }}#{{ article.titre|replace({' ': ''}) }}">{{ article.titre|replace({"_": " "})|capitalize }}</a></li>
                                         {% endfor %}
                                     </ul>
                                 </li>
@@ -68,8 +69,8 @@
                     </ul>
                 </nav>
                 <div class="row langues centreHorizontal">
-                    <a href="#FR"><img src="./img/flags/france.png" alt="Icône Drapeau FR pour contenu du site"></a>
-                    <a href="#DK"><img src="./img/flags/danmark.png" alt="Icône Drapeau DK pour contenu du site"></a>
+                    <a href="../fr/{{ active }}"><img src="../img/flags/france.png" alt="{{ __trad.footer["drapeau-fr"] }}"></a>
+                    <a href="../dk/{{ active }}"><img src="../img/flags/danmark.png" alt="{{ __trad.footer["drapeau-dk"] }}"></a>
                 </div>
             </footer>
         </div>

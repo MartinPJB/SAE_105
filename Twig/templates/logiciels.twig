@@ -14,7 +14,7 @@
 
 {% block articleSection %}
 
-    <h1>Les logiciels pour faire de la Color Bass</h1>
+    <h1>{{ traduction.h1 }}</h1>
 
     {# Une boucle pour afficher chaque article #}
 	{% for article in articles %}
@@ -23,17 +23,17 @@
 		<q cite="{{ article.lien }}">{{ article.q }}</q>
 		<p>{{ article.presentation }}</p>
 		<figure>
-			<img src="./img/logiciels/{{ article.img }}.jpg" alt="Interface logiciel {{ article.titre }}">
-			<figcaption>Interface du logiciel {{ article.titre }}</figcaption>
+			<img src="../img/logiciels/{{ article.img }}.jpg" alt="{{ article.titre }}">
+			<figcaption>{{ article.titre }}</figcaption>
 		</figure>
-		<p>{{ article.titre }} contient une variété de fonctionnalités pour la production musicale:</p>
+		<p>{{ article.titre }} {{ traduction.fonctionnalites }}</p>
 		<dl>
             {% for feature in article.features %}
                 <dt>{{ feature[0] }}:</dt>
                 <dd>{{ feature[1] }}</dd>
             {% endfor %}
 		</dl>
-		<button data-clickredirecthref="{{ article.lien }}">Visiter leur site</button>
+		<button data-clickredirecthref="{{ article.lien }}">{{ traduction.button }}</button>
 	</article>
 	{% endfor %}
 

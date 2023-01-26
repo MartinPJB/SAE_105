@@ -14,7 +14,7 @@
 
 {% block articleSection %}
 
-	<h1>Artistes étant reconnus pour faire de la Color Bass</h1>
+	<h1>{{ traduction.h1 }}</h1>
 
 	{# Une boucle pour afficher chaque article #}
 	{% for article in articles %}
@@ -22,14 +22,14 @@
 			<h2>{{ article.titre }}</h2>
 
 			<figure class="artisteImage">
-				<img src="./img/artistes/{{ article.img }}.jpg" alt="Visage de {{ article.titre }}">
+				<img src="../img/artistes/{{ article.img }}.jpg" alt="Visage de {{ article.titre }}">
 				<figcaption>{{ article.titre }} ({{ article.informations["Prénom / Nom"] }})</figcaption>
 			</figure>
 
 			<table>
 				<thead>
 					<tr>
-						<th colspan="2">Informations</th>
+						<th colspan="2">{{ traduction.th }}</th>
 					</tr>
 				</thead>
 

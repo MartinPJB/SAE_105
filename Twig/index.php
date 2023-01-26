@@ -32,13 +32,19 @@
     $pageKeys = array_keys($dataPages[$supposedToBeLang]);
     $pageNamesTranslation = array_column($dataPages[$supposedToBeLang], "titre");
 
+    // Pages affichées dans le footer avec les articles
+    $dataArticles = [
+        "artistes" => $dataArtistes[$supposedToBeLang], // Soit prend $dataArtistes["fr"], soit $dataArtistes["dk"]
+        "logiciels" => $dataLogiciels[$supposedToBeLang], // ''
+        "ressources" => $dataRessources[$supposedToBeLang] // ''
+    ];
 
     // Données qui vont êtres ajoutées en plus du $dataPages sur les pages twig
     $ajoutData = [
         "pages" => $pageKeys, // <-- Les pages existantes dans le data-pages pour les mettres dans la navbar automatiquement
         "traductionsNomPages" => $pageNamesTranslation, // <-- La traduction des noms de pages en fonction du langage
         "active" => $finalEndpoint, //  <-- L'endpoint pour vérifier la page active
-        "footerArticles" => $dataArticles[$supposedToBeLang], // <-- Récupère le $dataArticles pour les afficher dans le footer
+        "footerArticles" => $dataArticles, // <-- Récupère le $dataArticles pour les afficher dans le footer
         "__trad" => $dataTextes[$supposedToBeLang]["all"] // <-- Les traductions globales (sur toutes les pages)
     ];
 

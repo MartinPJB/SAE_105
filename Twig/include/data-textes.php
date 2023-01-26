@@ -92,7 +92,7 @@
         'dk' => [
             'all' => [
                 'footer' => [
-                    'creator' => 'Sité réalisé par Martin Brönnimann',
+                    'creator' => 'Side lavet af Martin Brönnimann',
                     'context' => 'Dans le cadre de la SAE 105',
                     'label-nav' => 'Footer contenant liens pour les catégories ainsi que de leurs articles',
                     'drapeau-fr' => 'Icône Drapeau FR pour contenu du site',
@@ -102,8 +102,8 @@
 
             'accueil' => [
                 'h1' => [
-                    'infosColorBass' => 'La "Color Bass"? C\'est quoi?',
-                    'music' => 'Comment ça sonne?'
+                    'infosColorBass' => '"Color Bass"? Hvad er det?',
+                    'music' => 'Hvordan lyder det?'
                 ],
                 'p' => [
                     'definition' => 'La <b>Color Bass</b> est une catégorisation de <b><a href="https://fr.wikipedia.org/wiki/Bass_music" target="_blank">Bass Music</a></b> se concentrant sur la mélodie, l\'émotion et la vibration parallèlement au dynamisme et à l\'agressivité des basses souvent associés au <b><a href="https://fr.wikipedia.org/wiki/Dubstep#:~:text=Le%20dubstep%20est%20un%20genre,%2C%20jungle%2C%20dub%20et%20reggae." target="_blank">Dubstep</a></b>.',

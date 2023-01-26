@@ -51,7 +51,7 @@ $dataRessources = [
 
     'dk' => [
         [
-            "titre" => "Tutoriels FL Studio",
+            "titre" => "FL Studio vejledninger",
             "listePuce" => [
                 ["'POWERFUL COLOR BASS DROP [HOW TO]' par CRWTH", "https://youtube.com/watch?v=6WBXD65WUTQ"],
                 ["'HOW TO MAKE COLOUR BASS!' par Infowler", "https://youtube.com/watch?v=tqD5aNj-g6A"],
@@ -60,7 +60,7 @@ $dataRessources = [
             ]
         ],
         [
-            "titre" => "Tutoriels Ableton",
+            "titre" => "Ableton vejledninger",
             "listePuce" => [
                 ["'HOW TO CREATE COLOUR BASS IN UNDER A MINUTE' par YokuMusic", "https://youtube.com/watch?v=U2DeYsM4cFs"],
                 ["'How to Color Bass' par Ash", "https://youtube.com/watch?v=AkStN2lgA7M"],

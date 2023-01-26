@@ -82,8 +82,8 @@ $dataPages = [
         ],
 
         "artistes" => [
-            "titre" => "Musikere",
-            "titreHeader" => "MUSIKERE",
+            "titre" => "Kunstnere",
+            "titreHeader" => "KUNSTNERE",
             "classeMain" => "withAside",
             "traduction" => $dataTextes["dk"]["artistes"],
             "articles" => $dataArtistes["dk"]

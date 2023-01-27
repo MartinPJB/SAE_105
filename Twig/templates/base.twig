@@ -21,11 +21,11 @@
         <div class="wrapper">
             <header role="banner" class="parallax column centreVertical centreHorizontal">
                 <img src="../img/logo.png" alt="logo-color-bass">
-                <h1>{{ titreHeader }}</h1>
+                <h1>{{ titre|upper }}</h1>
             </header>
 
             <!-- Navbar (Avec la classe mainNavbar pour la différencier des nav présentes dans les aside) -->
-            <nav class="mainNavbar" role="navigation" aria-label="Menu principal">     
+            <nav class="mainNavbar" role="navigation" aria-label="{{ __trad.nav.main }}">     
                 <ul>
                     <!-- Utilisation de chemins relatifs pour le moment (Si le site ne se trouve par à la racine du serveur local, ça risque de rediriger sur un 404) -->
                     {% for page in pages %}

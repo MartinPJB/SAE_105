@@ -13,14 +13,12 @@ $dataPages = [
     "fr" => [
         "accueil" => [
             "titre" => "Accueil",
-            "titreHeader" => "ACCUEIL DU SITE",
             "classeMain" => "column",
             "traduction" => $dataTextes["fr"]["accueil"]
         ],
 
         "ressources" => [
             "titre" => "Ressources",
-            "titreHeader" => "RESSOURCES",
             "classeMain" => "withAside",
             "articles" => $dataRessources["fr"],
             "traduction" => $dataTextes["fr"]["ressources"]
@@ -28,7 +26,6 @@ $dataPages = [
 
         "logiciels" => [
             "titre" => "Logiciels",
-            "titreHeader" => "LOGICIELS",
             "classeMain" => "withAside",
             "articles" => $dataLogiciels["fr"],
             "traduction" => $dataTextes["fr"]["logiciels"]
@@ -36,7 +33,6 @@ $dataPages = [
 
         "artistes" => [
             "titre" => "Artistes",
-            "titreHeader" => "ARTISTES",
             "classeMain" => "withAside",
             "articles" => $dataArtistes["fr"],
             "traduction" => $dataTextes["fr"]["artistes"]
@@ -44,14 +40,12 @@ $dataPages = [
 
         "contact" => [
             "titre" => "Contact",
-            "titreHeader" => "CONTACT",
             "classeMain" => "column",
             "traduction" => $dataTextes["fr"]["contact"]
         ],
 
         "a_propos" => [
             "titre" => "A propos",
-            "titreHeader" => "A PROPOS",
             "classeMain" => "column",
             "traduction" => $dataTextes["fr"]["cgu"]
         ],
@@ -60,14 +54,12 @@ $dataPages = [
     "dk" => [
         "accueil" => [
             "titre" => "Forside",
-            "titreHeader" => "HJEMMESIDEHJEM",
             "classeMain" => "column",
             "traduction" => $dataTextes["dk"]["accueil"]
         ],
 
         "ressources" => [
             "titre" => "Ressourcer",
-            "titreHeader" => "RESSOURCER",
             "classeMain" => "withAside",
             "traduction" => $dataTextes["dk"]["ressources"],
             "articles" => $dataRessources["dk"]
@@ -75,7 +67,6 @@ $dataPages = [
 
         "logiciels" => [
             "titre" => "Software",
-            "titreHeader" => "SOFTWARE",
             "classeMain" => "withAside",
             "traduction" => $dataTextes["dk"]["logiciels"],
             "articles" => $dataLogiciels["dk"]
@@ -83,7 +74,6 @@ $dataPages = [
 
         "artistes" => [
             "titre" => "Kunstnere",
-            "titreHeader" => "KUNSTNERE",
             "classeMain" => "withAside",
             "traduction" => $dataTextes["dk"]["artistes"],
             "articles" => $dataArtistes["dk"]
@@ -91,14 +81,12 @@ $dataPages = [
 
         "contact" => [
             "titre" => "Kontakt",
-            "titreHeader" => "KONTAKT",
             "classeMain" => "column",
             "traduction" => $dataTextes["dk"]["contact"]
         ],
 
         "a_propos" => [
             "titre" => "Om os",
-            "titreHeader" => "OM OS",
             "classeMain" => "column",
             "traduction" => $dataTextes["dk"]["cgu"]
         ],

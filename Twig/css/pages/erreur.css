@@ -1,0 +1,29 @@
+/* Body */
+body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+/* H1 */
+h1 {
+    font-size: 30vw;
+    font-family: 'Prompt', sans-serif;
+
+    background-image: url("../../img/galaxie.jpg");
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-font-smoothing: antialiased;
+}

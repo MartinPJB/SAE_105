@@ -58,6 +58,10 @@ a:hover {
 }
 
 /* Body & main */
+/* 
+    Pour centrer le body, j'ai retenté avec un margin: auto, mais ça ne le centre toujours pas.
+    J'ai donc gardé le display: flex pour le faire. Si vous savez pourquoi, pourriez-vous me faire part de votre connaissance ? Merci d'avance.
+*/
 body {
     display: flex;
     align-items: center;
@@ -325,7 +329,7 @@ button {
 
 input[type="submit"]:hover,
 button:hover {
-    box-shadow: inset 15.5em 0 0 0 rgb(var(--main-color));
+    box-shadow: inset 25.5em 0 0 0 rgb(var(--main-color));
     color: var(--light);
 }
 

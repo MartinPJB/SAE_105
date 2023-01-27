@@ -23,7 +23,7 @@
 
 			<figure class="artisteImage">
 				<img src="../img/artistes/{{ article.img }}.jpg" alt="Visage de {{ article.titre }}">
-				<figcaption>{{ article.titre }} ({{ article.informations["Prénom / Nom"] }})</figcaption>
+				<figcaption>{{ article.titre }}</figcaption>
 			</figure>
 
 			<table>
@@ -44,10 +44,10 @@
 			</table>
 
 			<details>
-                <summary>Liens</summary>
+                <summary>{{ traduction.liens }}</summary>
                 <ul>
 					{% for plateforme, lien in article.liens %}
-						<li><a href="{{ lien }}" target="_blank">Son {{ plateforme }}</a></li>
+						<li><a href="{{ lien }}" target="_blank">{{ traduction.pronom }} {{ plateforme }}</a></li>
 					{% endfor %}
                 </ul>
             </details>

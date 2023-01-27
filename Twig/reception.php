@@ -7,15 +7,13 @@
     <title>Reception | Test</title>
 </head>
 <body>
+    <h1>Informations reçues dans la méthode POST</h1>
     <?php
-
     if (isset($_POST)) {
-        echo "<h1>Informations reçues dans la méthode POST</h1>";
         foreach ($_POST as $cle => $valeur) {
             echo "<p>$cle: $valeur</p>";
         }
     }
-
     ?>
 </body>
 </html>

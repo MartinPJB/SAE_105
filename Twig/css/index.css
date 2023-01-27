@@ -155,7 +155,7 @@ nav.mainNavbar ul li a {
 }
 
 nav.mainNavbar ul li a::after {
-    content: "";
+    content: '';
     width: 0;
     height: 3px;
     border-radius: 15px;
@@ -259,13 +259,13 @@ footer .langues img {
 }
 
 .parallax::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("../img/galaxie.jpg");
+    background-image: url('../img/galaxie.jpg');
     background-size: cover;
     background-attachment: fixed;
     z-index: -1;
@@ -307,8 +307,9 @@ footer .langues img {
     opacity: .5;
 }
 
-/* Buttons & input["sumbit"] */
-input[type="submit"],
+/* Buttons & input['sumbit'] & a.button-a */
+a.button-a,
+input[type='submit'],
 button {
     position: relative;
     box-sizing: border-box;
@@ -327,8 +328,10 @@ button {
     box-shadow: inset 0 0 0 0 rgb(var(--main-color));
 }
 
-input[type="submit"]:hover,
+a.button-a:hover,
+input[type='submit']:hover,
 button:hover {
+    opacity: 1;
     box-shadow: inset 25.5em 0 0 0 rgb(var(--main-color));
     color: var(--light);
 }

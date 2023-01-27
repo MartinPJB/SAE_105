@@ -27,8 +27,8 @@ form fieldset div:not(:last-of-type) {
     margin-bottom: 1rem;
 }
 
-form fieldset div input[type="text"],
-form fieldset div input[type="email"],
+form fieldset div input[type='text'],
+form fieldset div input[type='email'],
 form fieldset div select,
 form fieldset textarea {
     width: 15rem;

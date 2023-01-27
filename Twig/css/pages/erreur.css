@@ -20,7 +20,7 @@ h1 {
     font-size: 30vw;
     font-family: 'Prompt', sans-serif;
 
-    background-image: url("../../img/galaxie.jpg");
+    background-image: url('../../img/galaxie.jpg');
     background-size: cover;
     background-clip: text;
     -webkit-background-clip: text;

@@ -50,8 +50,9 @@
         'ressources' => $dataRessources[$supposedToBeLang]
     ];
 
-    // Ce tableau contient toutes les données qui seront utilisées dans les pages en plus des données de pages (dataPages) définies dans data-pages.php
+    // Ce tableau contient toutes les données qui seront utilisées sur toutes les pages en plus des données de pages (dataPages) définies dans data-pages.php
     $ajoutData = [
+        'langCode' =>  $supposedToBeLang,
         'pages' => $pageKeys,
         'traductionsNomPages' => $pageNamesTranslation,
         'active' => $finalEndpoint,

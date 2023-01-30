@@ -39,9 +39,9 @@
 				<div class="row">
 					<label>{{ traduction.labels.reason }}:</label>
 					<select name="raison">
-						<option value="pb" selected>{{ traduction.select.problem }}</option>
-						<option value="qt">{{ traduction.select.question }}</option>
-						<option value="rp">{{ traduction.select.report }}</option>
+						{% for nom, option in traduction.select %}
+							<option value="{{ nom }}">{{ option }}</option>
+						{% endfor %}
 					</select>
 				</div>
 				<div class="row">

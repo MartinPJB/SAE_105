@@ -7,11 +7,10 @@
             // Commun à toutes les pages
             'all' => [
                 'footer' => [
-                    'creator' => 'Sité réalisé par Martin Brönnimann',
+                    'creator' => 'Site réalisé par Martin Brönnimann',
                     'context' => 'Dans le cadre de la SAE 105',
                     'label-nav' => 'Footer contenant liens pour les catégories ainsi que de leurs articles',
-                    'drapeau-fr' => 'Icône Drapeau FR pour contenu du site',
-                    'drapeau-dk' => 'Icône Drapeau DK pour contenu du site'
+                    'drapeau' => 'Icône Drapeau {{ langue }} pour contenu du site'
                 ],
                 'nav' => [
                     'main' => 'Menu principal'
@@ -103,8 +102,7 @@
                     'creator' => 'Side lavet af Martin Brönnimann',
                     'context' => 'Som en del af SAE 105',
                     'label-nav' => 'Footer med links til kategorierne og deres artikler',
-                    'drapeau-fr' => 'FR Flag-ikon for webstedets indhold',
-                    'drapeau-dk' => 'DK Flag-ikon for webstedets indhold'
+                    'drapeau' => '{{ langue }} Flag-ikon for webstedets indhold'
                 ],
                 'nav' => [
                     'main' => 'Hovedmenu',
@@ -181,5 +179,5 @@
                     ["Anvendelig lov og kompetent jurisdiktion", "Brugsvilkår er underlagt og fortolket i overensstemmelse med franske love. Enhver tvist vedrørende brugen af Color Bass-websitet er underlagt de kompetente domstole i Haguenau."]
                 ]
             ]
-        ]
+        ],
     ];

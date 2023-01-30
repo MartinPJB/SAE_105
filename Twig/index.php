@@ -53,6 +53,7 @@
     // Ce tableau contient toutes les données qui seront utilisées sur toutes les pages en plus des données de pages (dataPages) définies dans data-pages.php
     $ajoutData = [
         'langCode' =>  $supposedToBeLang,
+        'langues' => $supportedLangs,
         'pages' => $pageKeys,
         'traductionsNomPages' => $pageNamesTranslation,
         'active' => $finalEndpoint,

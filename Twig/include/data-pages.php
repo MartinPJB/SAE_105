@@ -90,5 +90,5 @@ $dataPages = [
             'classeMain' => 'column',
             'traduction' => $dataTextes['dk']['cgu']
         ],
-    ]
+    ],
 ];

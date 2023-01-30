@@ -69,8 +69,9 @@
                     </ul>
                 </nav>
                 <div class="row langues centreHorizontal">
-                    <a href="../fr/{{ active }}"><img src="../img/flags/france.png" alt="{{ __trad.footer["drapeau-fr"] }}"></a>
-                    <a href="../dk/{{ active }}"><img src="../img/flags/danmark.png" alt="{{ __trad.footer["drapeau-dk"] }}"></a>
+                    {% for langue in langues %}
+                        <a href="../{{ langue }}/{{ active }}"><img src="../img/flags/{{ langue }}.png" alt="{{ __trad.footer["drapeau"]|replace({'{{ langue }}': langue|upper }) }}"></a>
+                    {% endfor %}
                 </div>
             </footer>
         </div>

@@ -1,6 +1,6 @@
 <?php
 
-// Vidéos affichées sur la page d'accueil
+// Vidéos affichées sur la page d'accueil (Transmise à la vue Twig)
 $videos = [
     [
         'id' => 'SM0B-s2ggzQ',

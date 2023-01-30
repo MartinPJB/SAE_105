@@ -1,9 +1,12 @@
 <?php
 
-    // Le contenu du site hors des articles (Genre footer, page d'accueil, formulaire contact, etc...)
-    $dataTextes = [
-        // Version française
-        'fr' => [
+/*
+    Tableau contenant tous les textes du site qui seront transmis à Twig pour le rendu (par l'intermédiaire de data-pages.php)
+    Le tableau est également réparti en langues afin de faciliter la séparation des textes selon la langue
+*/
+$dataTextes = [
+    // Version française
+    'fr' => [
             // Commun à toutes les pages
             'all' => [
                 'footer' => [
@@ -93,10 +96,10 @@
                     ["Droit Applicable et Juridiction Compétente", "Les CGU sont régies par et interprétées conformément aux lois Françaises. Tout litige en relation avec l'utilisation du site Color Bass est soumis aux tribunaux compétents de Haguenau."]
                 ]
             ]
-        ],
+    ],
 
-        // Version Danoise (Traduction de tout ce qui est en Danois vérifiée, corrigée et complétée par ma copine le parlant couramment)
-        'dk' => [
+    // Version Danoise (Traduction de tout ce qui est en Danois vérifiée, corrigée et complétée par ma copine le parlant couramment)
+    'dk' => [
             'all' => [
                 'footer' => [
                     'creator' => 'Side lavet af Martin Brönnimann',
@@ -179,5 +182,5 @@
                     ["Anvendelig lov og kompetent jurisdiktion", "Brugsvilkår er underlagt og fortolket i overensstemmelse med franske love. Enhver tvist vedrørende brugen af Color Bass-websitet er underlagt de kompetente domstole i Haguenau."]
                 ]
             ]
-        ],
-    ];
+    ],
+];

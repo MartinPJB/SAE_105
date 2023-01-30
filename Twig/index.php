@@ -18,7 +18,12 @@
     // S'occupe du langage dans l'URL (Exemple: .../fr/accueil OU .../dk/ressources)
     // Langue par défaut du site
     $defaultLanguage = 'fr';
-    // Langues supportées par le site
+
+    /* 
+        Langues supportées par le site
+        On récupère les clés du tableau $dataPages qui contient toutes les données des pages du site (voir data-pages.php)
+        Cela permet d'obtenir les langues disponibles et supportées par le site de manière automatique        
+    */
     $supportedLangs = array_keys($dataPages);
 
     // Récupère le dernier segment de l'URL (nom de la page)

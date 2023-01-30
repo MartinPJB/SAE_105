@@ -1,9 +1,9 @@
 <?php
 
-// Importe les data-articles des pages qui sont des articles (importe $dataLogiciels, $dataArtistes, $dataRessources)
-include('./include/articles/data-artistes.php');
-include('./include/articles/data-logiciels.php');
-include('./include/articles/data-ressources.php');
+// Importe les articles contenus dans chaques catégories (soit $dataLogiciels, $dataArtistes, $dataRessources)
+include('./include/categories/data-artistes.php');
+include('./include/categories/data-logiciels.php');
+include('./include/categories/data-ressources.php');
 
 // Importe les data des pages
 include('./include/pages/data-accueil.php');
@@ -12,7 +12,11 @@ include('./include/pages/data-accueil.php');
 include('./include/data-textes.php');
 
 
-// Contient les données de mes pages
+/*
+    Tableau contenant toutes les données des pages du site qui seront transmise à Twig pour le rendu
+    Le tableau est réparti en langues, car les titres des pages ainsi que les textes traduits propres aux pages diffèrent selon la langue
+    C'est également grâce à ces clés que je peux récupérer la liste des langues disponibles dans index.php
+*/
 $dataPages = [
     'fr' => [
         'accueil' => [

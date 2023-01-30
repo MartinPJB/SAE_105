@@ -69,6 +69,7 @@
                     </ul>
                 </nav>
                 <div class="row langues centreHorizontal">
+                    {# Affiche les drapeaux de langues de manière automatique #}
                     {% for langue in langues %}
                         <a href="../{{ langue }}/{{ active }}"><img src="../img/flags/{{ langue }}.png" alt="{{ __trad.footer["drapeau"]|replace({'{{ langue }}': langue|upper }) }}"></a>
                     {% endfor %}

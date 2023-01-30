@@ -2,10 +2,11 @@
 
 {# Main #}
 {% block articleAside %}
-	{# Aside contenant tous les articles avec une ancre pour scroll #}
+	{# Boucle for pour ajouter chaque article en forme de lien avec une ancre pour scroll #}
 	<ul>
 		{% for article in articles %}
 			<li>
+				{# L'ancre sera juste le nom de l'article sans espace #}
 				<a href="#{{ article.titre|replace({' ': ''}) }}">{{ article.titre }}</a>
 			</li>
 		{% endfor %}
@@ -21,6 +22,7 @@
 	<article id="{{ article.titre|replace({' ': ''}) }}">
 		<h2>{{ article.titre }}</h2>
 		<ul>
+			{# Créer la liste a puce automatiquement #}
             {% for li in article.listePuce %}
                 <li><a target="_blank" href="{{ li[1] }}">{{ li[0] }}</a></li>
             {% endfor %}

@@ -5,8 +5,12 @@ include('./include/articles/data-artistes.php');
 include('./include/articles/data-logiciels.php');
 include('./include/articles/data-ressources.php');
 
+// Importe les data des pages
+include('./include/pages/data-accueil.php');
+
 // Importe les traductions des pages ($dataTextes)
 include('./include/data-textes.php');
+
 
 // Contient les données de mes pages
 $dataPages = [
@@ -14,7 +18,8 @@ $dataPages = [
         'accueil' => [
             'titre' => 'Accueil',
             'classeMain' => 'column',
-            'traduction' => $dataTextes['fr']['accueil']
+            'traduction' => $dataTextes['fr']['accueil'],
+            'videos' => $videos
         ],
 
         'ressources' => [

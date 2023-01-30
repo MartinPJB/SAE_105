@@ -19,9 +19,9 @@
     <section class="videosClips">
         <h1>{{ traduction.h1.music }}</h1>
         <div class="row gap centreHorizontal">
-            <iframe src="https://www.youtube-nocookie.com/embed/SM0B-s2ggzQ" title="Musique de l'artiste Sharks: 'Haxo'" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <iframe src="https://www.youtube-nocookie.com/embed/RXerRpYcwuw" title="Musique de l'artiste Ace Aura: 'UMBRA'" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <iframe src="https://www.youtube-nocookie.com/embed/XUlJN59Ivnc" title="Musique de l'artiste Skybreak: 'Soul Shards'" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            {% for videoYoutube in videos %}
+                <iframe src="https://www.youtube-nocookie.com/embed/{{ videoYoutube.id }}" title="{{ videoYoutube.titre }}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            {% endfor %}
         </div>
     </section>
 {% endblock %}

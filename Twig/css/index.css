@@ -282,6 +282,10 @@ footer .langues img {
     flex-direction: column;
 }
 
+.spaceBetween {
+    justify-content: space-between;
+}
+
 .gap {
     gap: 15px;
 }

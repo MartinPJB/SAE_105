@@ -6,54 +6,67 @@
 	<ul>
 		{% for article in articles %}
 			<li>
-				{# L'ancre sera juste le nom de l'article sans espace #}
-				<a href="#{{ article.titre|replace({' ': ''}) }}">{{ article.titre }}</a>
+				{# L'ancre sera juste la lettre de l'alphabet correspondant à l'index de la boucle (Si plus de 26 articles, la solution ne marchera plus) #}
+				{% set articleID = range('A','Z')[loop.index0] %}
+				<a href="#{{ articleID }}">{{ article.titre }}</a>
 			</li>
 		{% endfor %}
 	</ul>
 {% endblock %}
 
 {% block articleSection %}
+    <h1>{{ traduction.h1 }}</h1>
 
-	<h1>{{ traduction.h1 }}</h1>
-
-	{# Une boucle pour afficher chaque article #}
+    {# Une boucle pour afficher chaque article #}
 	{% for article in articles %}
-		<article id="{{ article.titre|replace({' ': ''}) }}">
+	{% set articleID = range('A','Z')[loop.index0] %}
+	<article id="{{ articleID }}">
+
+		<div class="row centreVertical spaceBetween">
 			<h2>{{ article.titre }}</h2>
 
-			<figure class="artisteImage">
-				<img src="../img/artistes/{{ article.img }}.jpg" alt="Visage de {{ article.titre }}">
-				<figcaption>{{ article.titre }}</figcaption>
-			</figure>
+			{# Pouvoir changer de langue rapidement en arrivant directement sur l'article (En affichant le dreapeau de l'autre langue) #}
+			<ul class="row translations">
+				{% for langue in langues %}
+					{% if langCode != langue %}
+						<a href="../{{ langue }}/{{ active }}#{{ articleID }}"><img src="../img/flags/{{ langue }}.png" alt="{{ __trad.footer["drapeau"]|replace({'{{ langue }}': langue|upper }) }}"></a>
+					{% endif %}
+				{% endfor %}
+			</ul>
+		</div>
 
-			<table>
-				<thead>
+		<figure class="artisteImage">
+			<img src="../img/artistes/{{ article.img }}.jpg" alt="Visage de {{ article.titre }}">
+			<figcaption>{{ article.titre }}</figcaption>
+		</figure>
+
+		<table>
+			<thead>
+				<tr>
+					<th colspan="2">{{ traduction.th }}</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				{# Ajoute les td de manière automatique avec une boucle for sous forme clé, valeur pour ne pas a avoir à créer les tr/td à la main #}
+				{% for titreInfo, valeurInfo in article.informations %}
 					<tr>
-						<th colspan="2">{{ traduction.th }}</th>
+						<td>{{ titreInfo }}</td>
+						<td>{{ valeurInfo }}</td>
 					</tr>
-				</thead>
+				{% endfor %}
+			</tbody>
+		</table>
 
-				<tbody>
-					{# Ajoute les td de manière automatique avec une boucle for sous forme clé, valeur pour ne pas a avoir à créer les tr/td à la main #}
-					{% for titreInfo, valeurInfo in article.informations %}
-						<tr>
-							<td>{{ titreInfo }}</td>
-							<td>{{ valeurInfo }}</td>
-						</tr>
-					{% endfor %}
-				</tbody>
-			</table>
-
-			<details>
-                <summary>{{ traduction.liens }}</summary>
-                <ul>
-					{# Ajoute les liens de manière automatique avec une boucle for sous forme clé, valeur pour ne pas a avoir à créer les li à la main #}
-					{% for plateforme, lien in article.liens %}
-						<li><a href="{{ lien }}" target="_blank">{{ traduction.pronom }} {{ plateforme }}</a></li>
-					{% endfor %}
-                </ul>
-            </details>
-		</article>
+		<details>
+            <summary>{{ traduction.liens }}</summary>
+            <ul>
+				{# Ajoute les liens de manière automatique avec une boucle for sous forme clé, valeur pour ne pas a avoir à créer les li à la main #}
+				{% for plateforme, lien in article.liens %}
+					<li><a href="{{ lien }}" target="_blank">{{ traduction.pronom }} {{ plateforme }}</a></li>
+				{% endfor %}
+            </ul>
+        </details>
+	</article>
 	{% endfor %}
 {% endblock %}

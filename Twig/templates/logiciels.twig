@@ -6,28 +6,44 @@
 	<ul>
 		{% for article in articles %}
 			<li>
-				{# L'ancre sera juste le nom de l'article sans espace #}
-				<a href="#{{ article.titre|replace({' ': ''}) }}">{{ article.titre }}</a>
+				{# L'ancre sera juste la lettre de l'alphabet correspondant à l'index de la boucle (Si plus de 26 articles, la solution ne marchera plus) #}
+				{% set articleID = range('A','Z')[loop.index0] %}
+				<a href="#{{ articleID }}">{{ article.titre }}</a>
 			</li>
 		{% endfor %}
 	</ul>
 {% endblock %}
 
 {% block articleSection %}
-
     <h1>{{ traduction.h1 }}</h1>
 
     {# Une boucle pour afficher chaque article #}
 	{% for article in articles %}
-	<article id="{{ article.titre|replace({' ': ''}) }}">
-		<h2>{{ article.titre }}</h2>
+	{% set articleID = range('A','Z')[loop.index0] %}
+	<article id="{{ articleID }}">
+
+		<div class="row centreVertical spaceBetween">
+			<h2>{{ article.titre }}</h2>
+
+			{# Pouvoir changer de langue rapidement en arrivant directement sur l'article (En affichant le dreapeau de l'autre langue) #}
+			<ul class="row translations">
+				{% for langue in langues %}
+					{% if langCode != langue %}
+						<a href="../{{ langue }}/{{ active }}#{{ articleID }}"><img src="../img/flags/{{ langue }}.png" alt="{{ __trad.footer["drapeau"]|replace({'{{ langue }}': langue|upper }) }}"></a>
+					{% endif %}
+				{% endfor %}
+			</ul>
+		</div>
+		
 		<q cite="{{ article.lien }}">{{ article.q }}</q>
 		<p>{{ article.presentation }}</p>
+
 		<figure>
 			<img src="../img/logiciels/{{ article.img }}.jpg" alt="{{ article.titre }}">
 			<figcaption>{{ article.titre }}</figcaption>
 		</figure>
 		<p>{{ article.titre }} {{ traduction.fonctionnalites }}</p>
+
 		<dl>
 			{# Affiche les fonctionnalités du logiciel automatiquement #}
             {% for feature in article.features %}

@@ -178,6 +178,27 @@ article figure figcaption {
     margin-top: -5px;
 }
 
+article ul.translations {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+article ul.translations li:not(:first-child) {
+    margin-left: .5rem;
+}
+
+article ul.translations img {
+    width: 1.5rem;
+    opacity: 0;
+    transition: opacity .2s ease;
+}
+
+article:hover ul.translations img {
+    opacity: 1;
+}
+
 article ul li:nth-child(even) a {
     color: rgb(var(--main-color-darker));
     font-weight: bold;

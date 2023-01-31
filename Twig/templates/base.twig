@@ -60,7 +60,10 @@
                                     <ul class="lowOpacity column">
                                         {# Pour chaque article de la page, on ajoute un lien vers l'article #}
                                         {% for article in footerArticles[page] %}
-                                            <li><a href="./{{ page }}#{{ article.titre|replace({' ': ''}) }}">{{ article.titre|replace({"_": " "})|capitalize }}</a></li>
+
+                                            {% set articleID = range('A','Z')[loop.index0] %}
+                                            <li><a href="./{{ page }}#{{ articleID }}">{{ article.titre|replace({"_": " "})|capitalize }}</a></li>
+
                                         {% endfor %}
                                     </ul>
                                 </li>

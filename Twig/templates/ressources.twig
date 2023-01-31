@@ -6,7 +6,7 @@
 	<ul>
 		{% for article in articles %}
 			<li>
-				{# L'ancre sera juste la lettre de l'alphabet correspondant à l'index de la boucle (Si plus de 26 articles, la solution ne marchera plus) #}
+				{# L'ancre sera juste la lettre de l'alphabet correspondant à l'index de la boucle afin de ne pas avoir de soucis sur les noms d'articles traduits (Si plus de 26 articles, la solution ne marchera plus) #}
 				{% set articleID = range('A','Z')[loop.index0] %}
 				<a href="#{{ articleID }}">{{ article.titre }}</a>
 			</li>

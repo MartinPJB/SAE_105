@@ -7,6 +7,7 @@ include('./include/categories/data-ressources.php');
 
 // Importe les data des pages
 include('./include/pages/data-accueil.php');
+include('./include/pages/data-contact.php');
 
 // Importe les traductions des pages ($dataTextes)
 include('./include/data-textes.php');
@@ -50,7 +51,8 @@ $dataPages = [
         'contact' => [
             'titre' => 'Contact',
             'classeMain' => 'column',
-            'traduction' => $dataTextes['fr']['contact']
+            'traduction' => $dataTextes['fr']['contact'],
+            'form' => $form
         ],
 
         'a_propos' => [
@@ -92,7 +94,8 @@ $dataPages = [
         'contact' => [
             'titre' => 'Kontakt',
             'classeMain' => 'column',
-            'traduction' => $dataTextes['dk']['contact']
+            'traduction' => $dataTextes['dk']['contact'],
+            'form' => $form
         ],
 
         'a_propos' => [

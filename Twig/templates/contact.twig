@@ -11,27 +11,18 @@
 	<section>
 		<h1>{{ traduction.h1 }}</h1>
 		<form method="post" action="../reception.php">
-			<!-- Fieldset pour le sexe de l'user -->
+			<!-- Fieldset pour le genre de l'user -->
 			<fieldset>
-				<legend>{{ traduction.legends.sexe }}:</legend>
+				<legend>{{ traduction.legends.gender }}:</legend>
 				<!-- Mit dans des divs pour juste mettre en row -->
+				{% for input in form.gender %}
 				<div>
-					<input type="radio" name="sexe" id="female">
-					<label for="female">{{ traduction.labels.woman }}</label>
+					<input type="radio" name="gender" id="{{ input.id }}">
+					<label for="{{ input.id }}">{{ traduction.labels[input.id] }}</label>
 				</div>
-				<div>
-					<input type="radio" name="sexe" id="male">
-					<label for="male">{{ traduction.labels.man }}</label>
-				</div>
-				<div>
-					<input type="radio" name="sexe" id="other">
-					<label for="other">{{ traduction.labels.other }}</label>
-				</div>
-				<div>
-					<input type="radio" name="sexe" id="none">
-					<label for="none">{{ traduction.labels.none }}</label>
-				</div>
+				{% endfor %}
 			</fieldset>
+
 			<!-- Informations sur la raison du contact & autres -->
 			<fieldset>
 				<legend>{{ traduction.legends.info }}:</legend>
@@ -44,26 +35,29 @@
 						{% endfor %}
 					</select>
 				</div>
+
+				{# Affiche les inputs ensuite de manière auto #}
+				{% for div in form.raison %}
 				<div class="row">
-					<label>{{ traduction.labels.name }}:</label>
-					<input type="text" name="nom" placeholder="Jean Dupont" required>
+					<label for="{{ div.id }}">{{ traduction.labels[div.id] }}:</label>
+					<input type="{{ div.type }}" name="{{ div.id }}" id="{{ div.id }}" placeholder="{{ div.placeholder }}" required>
 				</div>
-				<div class="row">
-					<label>{{ traduction.labels.mail }}:</label>
-					<input type="email" name="mail" placeholder="jdupont67@gmail.com" required>
-				</div>
+				{% endfor %}
 			</fieldset>
+
 			<!-- Textarea pour reccueillir les commentaires des users -->
 			<fieldset>
 				<legend>{{ traduction.legends.comment }}:</legend>
 				<textarea name="comment" placeholder="{{ traduction.labels.commentPlaceholder }}"></textarea>
 			</fieldset>
+
 			<!-- Checkbox pour laisser l'utilisateur le choix d'être anonyme ou non -->
 			<fieldset>
 				<legend>{{ traduction.legends.infoPlus }}:</legend>
 				<input type="checkbox" name="anonymous" checked>
 				<label>{{ traduction.labels.anonymous }} (<strong>{{ traduction.labels.anonymousDetail }}</strong>)</label>
 			</fieldset>
+
 			<!-- Juste un bouton submit -->
 			<fieldset>
 				<legend>{{ traduction.legends.submitMsg }}:</legend>

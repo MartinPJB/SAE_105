@@ -64,7 +64,8 @@ $dataPages = [
         'accueil' => [
             'titre' => 'Forside',
             'classeMain' => 'column',
-            'traduction' => $dataTextes['dk']['accueil']
+            'traduction' => $dataTextes['dk']['accueil'],
+            'videos' => $videos
         ],
 
         'ressources' => [

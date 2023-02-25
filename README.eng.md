@@ -15,7 +15,7 @@ During this SAÉ, we had to create a website on a topic of our choice. The conte
 - To enable us to become autonomous on our workstation by mastering a development environment (code editing, validation, inspection, and local hosting of websites).
 <br>
 
-# 📚 Competencies Implemented
+# 📚 Implemented skills
 <ins>Essential Components (quality criteria):</ins>
 - Comply with web standards and accessibility norms
 - Produce functional, simple, and reusable code
@@ -52,7 +52,7 @@ Two approaches are possible, and you can change your choice during phases 2 or 3
  
 <hr>
 
-### <ins>2. Page Structure</ins>
+### <ins>2. Pages Structure</ins>
 All site pages contain the following elements:
 
 - A header including the site title, a banner;
@@ -69,3 +69,29 @@ All site pages contain the following elements:
 - Buttons or links to switch from one language to another will be present on each page.
 
 <br>
+
+## ✅ Compliance with specifications.
+- <ins>Mandatory static pages</ins>
+  - [x] 1 home page
+  - [x] 1 "about" page including the terms and conditions
+  - [x] 1 contact page including a form
+  
+- <ins>Category pages (Version 1)</ins>
+  - [x] 1 page including at least 5 articles from category 1
+  - [x] 1 page including at least 5 articles from category 2
+  - [x] 1 page including at least 5 articles from category 3
+  
+- <ins>Pages structure</ins>
+  - [x] A header including the site title, a banner
+  - [x] A menu allowing access to the different pages and categories of the site
+  - [x] A sub-menu per category listing the category's articles, placed, for example, in the category's section header
+  - [x] An "aside" block forming a column to the left or right of the pages whose content changes from one category or page to another. It can contain the sub-menu
+  - [x] A footer including a signature and the site map (links to all pages and all articles)
+  
+- <ins>Multilingual version</ins>
+  - [x] The site must be available in two languages (of your choice).
+  - [x] The contents of the articles will be available in these two languages.
+  - [x] Buttons or links to switch from one language to another will be present on each page.
+  
+- [x] Optimization of the PHP and Twig code
+- [x] Respect of the HTML semantics

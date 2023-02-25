@@ -69,3 +69,30 @@ Toutes les pages du sites contiennent les éléments suivants:
 - Le site devra être décliné en deux langues (au choix).
 - Les contenus des articles sera disponible dans ces deux langues.
 - Des boutons ou liens permetteront de passer d’une langue à l’autre seront présents sur chaque page.
+
+<br>
+
+## ✅ Respect du cahier des charges
+- <ins>Pages statiques imposées</ins>
+  - [x] 1 page d’accueil
+  - [x] 1 page "à propos" incluant les CGU
+  - [x] 1 page de contact incluant un formulaire
+  
+- <ins>Pages des catégories (Version 1)</ins>
+  - [x] 1 page incluant au moins 5 articles de la catégorie 1
+  - [x] 1 page incluant au moins 5 articles de la catégorie 2
+  - [x] 1 page incluant au moins 5 articles de la catégorie 3
+  
+- <ins>Structure des pages</ins>
+  - [x] Un entête incluant le titre du site, une bannière
+  - [x] Un menu permettant d’accéder aux différentes pages et catégories du site
+  - [x] Un sous-menu par catégorie listant les articles de la catégorie, placé par exemple dans l'entête de section de la catégorie
+  - [x] Un bloc “aside” formant une colonne à gauche ou à droite des pages dont le contenu change d’une catégorie ou d’une page à l’autre. Il peut contenir le sous-menu
+  
+- <ins>Version multilingue</ins>
+  - [x] Le site devra être décliné en deux langues (au choix).
+  - [x] Les contenus des articles sera disponible dans ces deux langues.
+  - [x] Des boutons ou liens permetteront de passer d’une langue à l’autre seront présents sur chaque page.
+  
+- [x] Optimisation du code PHP et Twig
+- [x] Respect de la sémantique HTML

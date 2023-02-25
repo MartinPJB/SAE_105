@@ -68,7 +68,7 @@ Toutes les pages du sites contiennent les éléments suivants:
 ### <ins>3. Version multilingue</ins>
 - Le site devra être décliné en deux langues (au choix).
 - Les contenus des articles sera disponible dans ces deux langues.
-- Des boutons ou liens permetteront de passer d’une langue à l’autre seront présents sur chaque page.
+- Des boutons ou liens qui permetteront de passer d’une langue à l’autre seront présents sur chaque page.
 
 <br>
 

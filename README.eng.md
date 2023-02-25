@@ -3,7 +3,10 @@
 
 <hr>
 
-## 👷 Context of the SAÉ (Learning and Evaluation Situation)
+## 👷 Context of the SAÉ* (Learning and Evaluation Situation)
+
+> *SAÉ: Learning and Evaluation Situation _("Situation d'Apprentissage et d'Évaluation" in French)_
+
 During this SAÉ, we had to create a website on a topic of our choice. The content of our site had to strictly comply with the specifications that had been provided to us at the beginning of the SAÉ.
 
 <hr>

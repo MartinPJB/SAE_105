@@ -3,6 +3,7 @@
 > If you do not speak french, please read [this README](./README.eng.md) instead.
 
 <hr>
+
 ## 👷 Contexte de la SAÉ (Situation d'Apprentissage et d'Évaluation)
 Durant cette SAÉ, nous devions réaliser un site Web sur le sujet de notre choix. 
 Le contenu de notre site devait impérativement respecter le cahier des charges qui nous avait été fournit au début de la SAÉ.

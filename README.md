@@ -6,7 +6,7 @@
 
 ## 👷 Contexte de la SAÉ*
 
-*SAÉ: Situation d'Apprentissage et d'Évaluation
+> *SAÉ: Situation d'Apprentissage et d'Évaluation
 
 Durant cette SAÉ, nous devions réaliser un site Web sur le sujet de notre choix. 
 Le contenu de notre site devait impérativement respecter le cahier des charges qui nous avait été fournit au début de la SAÉ.
